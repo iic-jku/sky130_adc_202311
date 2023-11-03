@@ -8856,16 +8856,17 @@ X32 VGND CLK a_27_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0567 pd=0.69 as=0.109 ps=
 X33 VGND SET_B a_1300_47# VNB sky130_fd_pr__nfet_01v8 ad=0.114 pd=1.01 as=0.0441 ps=0.63 w=0.42 l=0.15
 .ends
 
-.subckt adc_top clk_vcm config_1_in[0] config_1_in[10] config_1_in[11] config_1_in[12]
-+ config_1_in[13] config_1_in[14] config_1_in[15] config_1_in[1] config_1_in[2] config_1_in[3]
-+ config_1_in[4] config_1_in[5] config_1_in[6] config_1_in[7] config_1_in[8] config_1_in[9]
-+ config_2_in[0] config_2_in[10] config_2_in[11] config_2_in[12] config_2_in[13] config_2_in[14]
-+ config_2_in[15] config_2_in[1] config_2_in[2] config_2_in[3] config_2_in[4] config_2_in[5]
-+ config_2_in[6] config_2_in[7] config_2_in[8] config_2_in[9] conversion_finished_osr_out
-+ conversion_finished_out inn_analog inp_analog result_out[0] result_out[10] result_out[11]
-+ result_out[12] result_out[13] result_out[14] result_out[15] result_out[1] result_out[2]
-+ result_out[3] result_out[4] result_out[5] result_out[6] result_out[7] result_out[8]
-+ result_out[9] rst_n start_conversion_in VDD VSS
+.subckt adc_top VDD VSS inp_analog inn_analog rst_n clk_vcm start_conversion_in 
++ conversion_finished_out conversion_finished_osr_out
++ config_1_in[15] config_1_in[14] config_1_in[13] config_1_in[12] config_1_in[11] config_1_in[10]
++ config_1_in[9] config_1_in[8] config_1_in[7] config_1_in[6] config_1_in[5] config_1_in[4]
++ config_1_in[3] config_1_in[2] config_1_in[1] config_1_in[0]
++ config_2_in[15] config_2_in[14] config_2_in[13] config_2_in[12] config_2_in[11] config_2_in[10]
++ config_2_in[9] config_2_in[8] config_2_in[7] config_2_in[6] config_2_in[5] config_2_in[4]
++ config_2_in[3] config_2_in[2] config_2_in[1] config_2_in[0]
++ result_out[15] result_out[14] result_out[13] result_out[12] result_out[11] result_out[10]
++ result_out[9] result_out[8] result_out[7] result_out[6] result_out[5] result_out[4]
++ result_out[3] result_out[2] result_out[1] result_out[0]
 X_3155_ VSS VDD net59 _0045_ net71 net40 VDD VSS sky130_fd_sc_hd__dfrtp_1
 X_3086_ VDD VSS _1342_ _0971_ _0799_ VDD VSS sky130_fd_sc_hd__xor2_1
 X_2106_ VDD VSS _1125_ _0068_ core.pdc.col_out\[27\] _0070_ _1102_ _0160_ VDD VSS
