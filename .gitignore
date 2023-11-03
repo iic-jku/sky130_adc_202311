@@ -4,3 +4,6 @@
 */*/tmp
 a.out
 *.vcd
+.DS_Store
+abc.history
+runs
