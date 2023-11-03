@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699033063
+timestamp 1699034785
 << metal1 >>
 rect -1624 54698 -1504 54704
 rect -1624 46688 -1504 54578
@@ -750,4 +750,31 @@ use adc_top  adc_top_0
 timestamp 1699025947
 transform 1 0 0 0 1 0
 box -1076 -4 85624 80516
+<< labels >>
+rlabel metal5 83871 87224 87869 285129 1 VDD
+port 1 n
+rlabel metal5 83987 -150781 87985 -7194 1 VSS
+port 2 n
+rlabel metal3 94494 107496 99972 107556 1 rst_n
+port 3 n default input
+rlabel metal3 95768 241344 99960 241404 1 clk
+port 4 n default input
+rlabel metal3 94972 151888 100020 152008 1 conv_start
+port 5 n default input
+rlabel metal3 94622 -296486 99880 -296426 1 conv_finish
+port 6 n default output
+rlabel metal3 94236 -28564 100026 -28504 1 load
+port 7 n default input
+rlabel metal3 93824 -72996 99996 -72936 1 dati
+port 8 n default input
+rlabel metal3 93484 -251832 100038 -251772 1 dato
+port 9 n default output
+rlabel metal3 93186 -295304 99880 -295244 1 tie0
+port 10 n default output
+rlabel metal3 92984 -70632 100048 -70572 1 tie1
+port 11 n default output
+rlabel metal3 93510 59508 99838 59620 1 inp_ana
+port 12 n
+rlabel metal3 93512 13086 100078 13198 1 inn_ana
+port 13 n
 << end >>
