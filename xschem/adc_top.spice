@@ -1,4 +1,6 @@
-* NGSPICE file created from adc_top.gds.gz for LVS - technology: sky130A
+* Netlist for adc_top.mag
+* Created by PEX from magic file after toplevel assembly by OpenLane
+* Harald Pretl, IIC, JKU, 2023
 
 .subckt sky130_fd_sc_hd__dfrtp_1 VGND VPWR CLK D RESET_B Q VPB VNB
 X0 a_1217_47# a_27_47# a_1108_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0669 pd=0.75 as=0.0711 ps=0.755 w=0.36 l=0.15

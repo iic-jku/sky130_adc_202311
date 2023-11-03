@@ -1,8 +1,8 @@
-* PEX produced on Fri Nov  3 07:11:14 PM CET 2023 using ../iic-pex.sh with m=1 and s=1
-* NGSPICE file created from adc_wrapper.ext - technology: sky130A
+* Netlist (handwritten) for adc_wrapper.mag
+* Harald Pretl, IIC, JKU, 2023
 
-.include /foss/designs/sky130_adc_202311/lvs/adc_top.spice
-.include /foss/designs/sky130_adc_202311/lvs/adc_bridge.spice
+*.include /foss/designs/sky130_adc_202311/lvs/adc_top.spice
+*.include /foss/designs/sky130_adc_202311/lvs/adc_bridge.spice
 
 .subckt adc_wrapper VDD VSS rst_n clk conv_start conv_finish
 + load dati dato tie0 tie1 inp_ana inn_ana

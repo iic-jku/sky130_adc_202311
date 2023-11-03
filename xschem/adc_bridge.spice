@@ -1,4 +1,6 @@
-* NGSPICE file created from adc_bridge.ext - technology: sky130A
+* Netlist for adc_bridge.mag
+* Created by OpenLane2
+* Harald Pretl, IIC, JKU, 2023
 
 .subckt sky130_fd_sc_hd__decap_4 VGND VNB VPB VPWR
 X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.226 pd=2.26 as=0 ps=0 w=0.87 l=1.05
