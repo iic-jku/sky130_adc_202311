@@ -1,0 +1,17 @@
+{
+    "DESIGN_NAME": "adc_bridge",
+    "VERILOG_FILES": "adc_bridge.v",
+    "CLOCK_PERIOD": 10,
+    "CLOCK_PORT": "clk",
+    "FP_PDN_VOFFSET": 7,
+    "FP_PDN_HOFFSET": 7,
+    "FP_PDN_SKIPTRIM": true,
+    "DIE_AREA": "0 0 50 400",
+    "FP_PDN_CORE_RING": 1,
+    "FP_PIN_ORDER_CFG": "adc_bridge_pin_order.cfg",
+    "FP_SIZING": "absolute",
+    "VDD_PIN": "VDD",
+    "GND_PIN": "VSS",
+    "FP_PDN_VPITCH": 25,
+    "FP_PDN_HPITCH": 25
+}
