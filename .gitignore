@@ -1,9 +1,9 @@
 /.idea/
 /precheck_results/
-*/tmp
 */*/tmp
 a.out
 *.vcd
 .DS_Store
 abc.history
 runs
+tmp
