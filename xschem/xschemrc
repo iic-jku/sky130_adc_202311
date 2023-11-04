@@ -1,3 +1,6 @@
+#### SPDX-FileCopyrightText: Stefan Schippers
+#### SPDX-License-Identifier: Apache-2.0
+
 #### xschemrc system configuration file
 
 #### values may be overridden by user's ~/.xschem/xschemrc configuration file

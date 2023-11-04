@@ -7,6 +7,9 @@ S {}
 E {}
 T {gpio_analog[2] = io_in[9]
 gpio_analog[3] = io_in[10]} 1130 -750 0 0 0.4 0.4 {}
+T {SPDX-FileCopyrightText: 2023 Harald Pretl
+Johannes Kepler University, Institute for Integrated Circuits
+PDX-License-Identifier: Apache-2.0} 1330 -80 0 0 0.4 0.4 {}
 N 860 -940 920 -940 {
 lab=vccd1}
 N 860 -920 920 -920 {

@@ -1,4 +1,5 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {type=subcircuit
 format="@name @pinlist @symname"
@@ -109,3 +110,5 @@ T {io_clamp_high[2:0]} 125 136 0 1 0.2 0.2 {}
 T {io_clamp_low[2:0]} 125 156 0 1 0.2 0.2 {}
 T {user_clock2} -125 56 0 0 0.2 0.2 {}
 T {user_irq[2:0]} 125 176 0 1 0.2 0.2 {}
+T {SPDX-FileCopyrightText: efabless
+PDX-License-Identifier: Apache-2.0} -130 200 0 0 0.2 0.2 {}
