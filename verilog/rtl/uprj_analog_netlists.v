@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2020 Efabless Corporation
+// SPDX-FileCopyrightText: 2020 Efabless Corporation and 2023 Harald Pretl
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -31,8 +31,8 @@
     `default_nettype wire
     // Use behavorial model with gate-level simulation
     `include "rtl/user_analog_project_wrapper.v"
-    `include "rtl/user_analog_proj_example.v"
+    `include "rtl/adc_wrapper.v"
 `else
     `include "user_analog_project_wrapper.v"
-    `include "user_analog_proj_example.v"
+    `include "adc_wrapper.v"
 `endif
