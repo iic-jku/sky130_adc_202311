@@ -1,4 +1,6 @@
-// Copyright 2023 Harald Pretl, IIC, JKU
+// SPDX-FileCopyrightText: 2023 Harald Pretl
+// Johannes Kepler University, Institute for Integrated Circuits
+// SPDX-License-Identifier: Apache-2.0
 //
 // TB for adc_bridge.v
 

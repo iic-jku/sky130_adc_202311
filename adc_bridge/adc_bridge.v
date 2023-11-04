@@ -1,4 +1,6 @@
-// Copyright 2023 Harald Pretl, IIC, JKU
+// SPDX-FileCopyrightText: 2023 Harald Pretl
+// Johannes Kepler University, Institute for Integrated Circuits
+// SPDX-License-Identifier: Apache-2.0
 //
 // This digital module serves as a bridge between the (few) digital IOs and the
 // ADC digital IOs. A shift register is realized for the configuration bits, and

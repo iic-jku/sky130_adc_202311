@@ -7,6 +7,9 @@ S {}
 E {}
 T {Pin definition for adc_wrapper (to generate symbol).
 SPICE netlists are included, adjust paths if necessry.} 390 -200 0 0 0.4 0.4 {}
+T {SPDX-FileCopyrightText: 2023 Harald Pretl
+Johannes Kepler University, Institute for Integrated Circuits
+PDX-License-Identifier: Apache-2.0} 1260 -90 0 0 0.4 0.4 {}
 C {devices/ipin.sym} 260 -760 0 0 {name=p1 lab=VDD}
 C {devices/ipin.sym} 260 -720 0 0 {name=p2 lab=VSS}
 C {devices/ipin.sym} 260 -680 0 0 {name=p3 lab=rst_n}
