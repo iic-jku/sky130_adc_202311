@@ -102,30 +102,6 @@ R8 io_oeb[12] net2 sky130_fd_pr__res_generic_m3 W=0.3 L=0.6 m=1
 R9 io_oeb[13] net2 sky130_fd_pr__res_generic_m3 W=0.3 L=0.6 m=1
 .ends
 
-* expanding   symbol:  adc_wrapper.sym # of pins=13
-** sym_path: /foss/designs/sky130_adc_202311/xschem/adc_wrapper.sym
-** sch_path: /foss/designs/sky130_adc_202311/xschem/adc_wrapper.sch
-.subckt adc_wrapper VDD VSS rst_n clk conv_start conv_finish load dati dato tie0 tie1 inp_ana
-+ inn_ana
-*.PININFO VDD:I VSS:I rst_n:I clk:I conv_start:I conv_finish:O load:I dati:I dato:O tie0:O tie1:O
-*+ inp_ana:B inn_ana:B
-**** begin user architecture code
-
-*.include ../xschem/adc_wrapper.spice
-
-**** end user architecture code
-**** begin user architecture code
-
-*.include ../xschem/adc_top.spice
-
-**** end user architecture code
-**** begin user architecture code
-
-*.include ../xschem/adc_bridge.spice
-
-**** end user architecture code
-.ends
-
 * Netlist (handwritten) for adc_wrapper.mag
 * Harald Pretl, IIC, JKU, 2023
 
@@ -16429,3 +16405,4 @@ XFILLER_0_78_56 VSS VSS VDD VDD sky130_fd_sc_hd__decap_4
 XFILLER_0_94_11 VSS VSS VDD VDD sky130_fd_sc_hd__decap_8
 .ends
 
+.end
