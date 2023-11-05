@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698999411
+timestamp 1699142937
 << nwell >>
 rect -38 261 498 582
 << pwell >>
@@ -188,22 +188,25 @@ rect 339 -17 397 17
 rect 431 -17 460 17
 rect 0 -48 460 -17
 << labels >>
-flabel metal1 s 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
-port 2 nsew
-flabel metal1 s 29 527 63 561 0 FreeSans 200 0 0 0 VPWR
-port 1 nsew
 flabel locali s 213 221 247 255 0 FreeSans 200 0 0 0 A
-port 4 nsew
+port 7 nsew
 flabel locali s 397 357 431 391 0 FreeSans 200 0 0 0 X
-port 3 nsew
+port 6 nsew
 flabel locali s 29 221 63 255 0 FreeSans 200 0 0 0 B
+port 8 nsew
+flabel nwell s 29 527 63 561 0 FreeSans 200 0 0 0 VPB
+port 2 nsew
+flabel pwell s 29 -17 63 17 0 FreeSans 200 0 0 0 VNB
+port 3 nsew
+flabel metal1 s 29 -17 63 17 0 FreeSans 200 0 0 0 VGND
+port 4 nsew
+flabel metal1 s 29 527 63 561 0 FreeSans 200 0 0 0 VPWR
 port 5 nsew
 rlabel comment s 0 0 0 0 4 or2_1
-flabel nwell s 29 527 63 561 0 FreeSans 200 0 0 0 VPB
-port 7 nsew
-flabel pwell s 29 -17 63 17 0 FreeSans 200 0 0 0 VNB
-port 8 nsew
 << properties >>
 string FIXED_BBOX 0 0 460 544
+string GDS_END 87270
+string GDS_FILE adc_bridge.gds
+string GDS_START 83104
 string path 0.000 0.000 2.300 0.000 
 << end >>

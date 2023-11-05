@@ -1,7 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698999411
+timestamp 1515178157
+<< checkpaint >>
+rect 977 8740 9326 16856
 << nwell >>
 rect 6253 13313 6283 13555
 rect 3046 12966 3205 13221
@@ -226,23 +228,23 @@ rect 3269 12851 3335 12852
 rect 7356 10000 7676 15596
 rect 7746 10000 8066 15596
 use adc_comp_circuit  adc_comp_circuit_0
-timestamp 1698999411
+timestamp 1515178157
 transform 1 0 3088 0 1 13378
 box -686 -3378 4978 2218
 use adc_inverter  adc_inverter_1
-timestamp 1698999411
+timestamp 1515178157
 transform 1 0 2690 0 1 12236
 box -29 -156 220 582
 use adc_inverter  adc_inverter_2
-timestamp 1698999411
+timestamp 1515178157
 transform 1 0 2414 0 1 12236
 box -29 -156 220 582
 use adc_nor  adc_nor_0
-timestamp 1698999411
+timestamp 1515178157
 transform 1 0 6455 0 -1 12762
 box -8 -240 506 390
 use adc_nor_latch  adc_nor_latch_0
-timestamp 1698999411
+timestamp 1515178157
 transform 1 0 6123 0 1 12820
 box 160 184 1202 814
 << labels >>
@@ -264,4 +266,7 @@ flabel metal4 s 7356 10000 7676 15596 0 FreeSans 2000 90 0 0 VSS
 port 8 nsew
 << properties >>
 string FIXED_BBOX 0 0 8400 25800
+string GDS_END 16961608
+string GDS_FILE adc_top.gds.gz
+string GDS_START 16952296
 << end >>

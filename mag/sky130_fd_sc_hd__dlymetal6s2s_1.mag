@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698999411
+timestamp 1699142937
 << nwell >>
 rect -38 261 958 582
 << pwell >>
@@ -368,35 +368,38 @@ rect 891 -17 920 17
 rect 0 -48 920 -17
 << labels >>
 flabel metal1 s 24 527 58 561 0 FreeSans 200 0 0 0 VPWR
-port 1 nsew
-flabel metal1 s 24 -17 58 17 0 FreeSans 200 0 0 0 VGND
 port 2 nsew
-flabel locali s 24 221 58 255 0 FreeSans 200 0 0 0 A
-port 4 nsew
-flabel locali s 300 289 334 323 0 FreeSans 200 0 0 0 X
+flabel metal1 s 24 -17 58 17 0 FreeSans 200 0 0 0 VGND
 port 3 nsew
-flabel locali s 24 289 58 323 0 FreeSans 200 0 0 0 A
-port 4 nsew
-flabel locali s 300 357 334 391 0 FreeSans 200 0 0 0 X
-port 3 nsew
-flabel locali s 300 425 334 459 0 FreeSans 200 0 0 0 X
-port 3 nsew
-flabel locali s 300 221 334 255 0 FreeSans 200 0 0 0 X
-port 3 nsew
-flabel locali s 300 153 334 187 0 FreeSans 200 0 0 0 X
-port 3 nsew
-flabel locali s 300 85 334 119 0 FreeSans 200 0 0 0 X
-port 3 nsew
-flabel locali s 392 221 426 255 0 FreeSans 200 0 0 0 X
-port 3 nsew
-flabel locali s 392 289 426 323 0 FreeSans 200 0 0 0 X
-port 3 nsew
-rlabel comment s 0 0 0 0 4 dlymetal6s2s_1
 flabel nwell s 24 527 58 561 0 FreeSans 200 0 0 0 VPB
-port 6 nsew
+port 4 nsew
 flabel pwell s 24 -17 58 17 0 FreeSans 200 0 0 0 VNB
+port 5 nsew
+flabel locali s 24 221 58 255 0 FreeSans 200 0 0 0 A
 port 7 nsew
+flabel locali s 300 289 334 323 0 FreeSans 200 0 0 0 X
+port 6 nsew
+flabel locali s 24 289 58 323 0 FreeSans 200 0 0 0 A
+port 7 nsew
+flabel locali s 300 357 334 391 0 FreeSans 200 0 0 0 X
+port 6 nsew
+flabel locali s 300 425 334 459 0 FreeSans 200 0 0 0 X
+port 6 nsew
+flabel locali s 300 221 334 255 0 FreeSans 200 0 0 0 X
+port 6 nsew
+flabel locali s 300 153 334 187 0 FreeSans 200 0 0 0 X
+port 6 nsew
+flabel locali s 300 85 334 119 0 FreeSans 200 0 0 0 X
+port 6 nsew
+flabel locali s 392 221 426 255 0 FreeSans 200 0 0 0 X
+port 6 nsew
+flabel locali s 392 289 426 323 0 FreeSans 200 0 0 0 X
+port 6 nsew
+rlabel comment s 0 0 0 0 4 dlymetal6s2s_1
 << properties >>
 string FIXED_BBOX 0 0 920 544
-string path 0.000 13.600 23.000 13.600 
+string GDS_END 31538
+string GDS_FILE adc_bridge.gds
+string GDS_START 23762
+string path 0.000 2.720 4.600 2.720 
 << end >>

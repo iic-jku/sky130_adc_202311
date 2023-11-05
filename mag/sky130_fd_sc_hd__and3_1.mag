@@ -1,7 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698999411
+timestamp 1515178157
+<< checkpaint >>
+rect -1298 -1308 1758 1852
 << nwell >>
 rect -38 261 498 582
 << pwell >>
@@ -251,5 +253,8 @@ flabel pwell s 29 -17 63 17 0 FreeSans 200 0 0 0 VNB
 port 9 nsew
 << properties >>
 string FIXED_BBOX 0 0 460 544
+string GDS_END 679552
+string GDS_FILE adc_top.gds.gz
+string GDS_START 672434
 string path 0.000 0.000 11.500 0.000 
 << end >>

@@ -1,7 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698999411
+timestamp 1515178157
+<< checkpaint >>
+rect -1473 -1336 1473 1336
 << pwell >>
 rect -213 -76 213 76
 << nmos >>
@@ -36,4 +38,8 @@ rect -17 17 17 54
 rect -17 -54 17 -17
 rect 141 17 175 54
 rect 141 -54 175 -17
+<< properties >>
+string GDS_END 198390
+string GDS_FILE adc_top.gds.gz
+string GDS_START 197746
 << end >>

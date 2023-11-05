@@ -1,7 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698999411
+timestamp 1515178157
+<< checkpaint >>
+rect -1328 -1592 1668 1712
 << nwell >>
 rect -10 48 408 452
 << pwell >>
@@ -248,4 +250,8 @@ flabel locali s -42 -306 382 -270 0 FreeSans 200 0 0 0 VSS
 port 3 nsew
 flabel locali s -42 378 408 416 0 FreeSans 200 0 0 0 VDD
 port 4 nsew
+<< properties >>
+string GDS_END 5872
+string GDS_FILE adc_top.gds.gz
+string GDS_START 110
 << end >>

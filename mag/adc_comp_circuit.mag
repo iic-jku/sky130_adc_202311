@@ -1,24 +1,9 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1698999411
-<< error_s >>
-rect 2997 276 3984 345
-rect 185 -470 261 -461
-rect 620 -468 695 -459
-rect 185 -526 190 -470
-rect 620 -524 634 -468
-rect 185 -533 261 -526
-rect 620 -531 695 -524
-rect 3447 -970 3481 -936
-rect 3519 -970 3553 -936
-rect 3591 -970 3625 -936
-rect 3663 -970 3697 -936
-rect 3735 -970 3769 -936
-rect 2926 -1202 3145 -984
-rect 3180 -1202 3830 -1108
-rect 2926 -1238 3866 -1202
-rect 3145 -1312 3866 -1238
+timestamp 1515178157
+<< checkpaint >>
+rect -1946 -4638 6238 3478
 << nwell >>
 rect 878 186 3984 276
 rect 878 177 3024 186
@@ -4102,19 +4087,19 @@ rect 4853 -1121 4869 -1057
 rect 4933 -1121 4978 -1057
 rect 4658 -3378 4978 -1121
 use adc_comp_buffer  adc_comp_buffer_0
-timestamp 1698999411
+timestamp 1515178157
 transform 1 0 2737 0 1 -192
 box -68 -332 408 452
 use adc_comp_buffer  adc_comp_buffer_1
-timestamp 1698999411
+timestamp 1515178157
 transform 1 0 2737 0 -1 -860
 box -68 -332 408 452
 use adc_noise_decoup_cell2  adc_noise_decoup_cell2_0
-timestamp 1698999411
+timestamp 1515178157
 transform 1 0 -450 0 1 -3170
 box 0 0 4340 1580
 use adc_noise_decoup_cell2  adc_noise_decoup_cell2_1
-timestamp 1698999411
+timestamp 1515178157
 transform 1 0 -450 0 1 420
 box 0 0 4340 1580
 << labels >>
@@ -4130,4 +4115,8 @@ flabel metal4 s 4658 -3378 4978 2218 0 FreeSans 1000 90 0 0 VPWR
 port 5 nsew
 flabel metal4 s 4268 -3378 4588 2218 0 FreeSans 1000 90 0 0 VGND
 port 6 nsew
+<< properties >>
+string GDS_END 520478
+string GDS_FILE adc_top.gds.gz
+string GDS_START 424004
 << end >>
