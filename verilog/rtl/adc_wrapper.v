@@ -14,6 +14,8 @@
 // SPDX-License-Identifier: Apache-2.0
 
 `default_nettype none
+`include "adc_top.v"
+`include "adc_bridge.v"
 
 /*
  * I/O mapping for analog
@@ -166,52 +168,49 @@ module adc_wrapper (
     // IRQ
     assign irq = 3'b000;	// Unused
 
-    // LA --- unused (no need to connect to anything)
-    // assign la_data_out = {128{1'b0}};	// Unused
+    // Instiate the two user modules
 
-    // Instantiate the POR.  Connect the digital power to user area 1
-    // VCCD, and connect the analog power to user area 1 VDDA.
+    wire [15:0] cfg1;
+    wire [15:0] cfg2;
+    wire [15:0] res;
+    wire adc_fin;
+    wire adc_fin_osr;
 
-    // Monitor the 3.3V output with mprj_io[10] = gpio_analog[3]
-    // Monitor the 1.8V outputs with mprj_io[11,12] = io_out[11,12]
+    adc_top adc0 (
+        `ifdef USE_POWER_PINS
+            .VDD(vccd1),
+            .VSS(vssd1),
+        `endif
+        .clk_vcm(io_in[13]),
+        .rst_n(io_in[11]),
+        .inp_analog(gpio_analog[3]),
+        .inn_analog(gpio_analog[2]),
+        .start_conversion_in(io_in[12]),   
+        .config_1_in(cfg1),    
+        .config_2_in(cfg2),    
+        .result_out(res),    
+        .conversion_finished_out(adc_fin),
+        .conversion_finished_osr_out(adc_fin_osr)
+    );
 
-    ///example_por por1 (
-	///`ifdef USE_POWER_PINS
-	///    .vdd3v3(vdda1),
-	///    .vdd1v8(vccd1),
-	///    .vss(vssa1),
-	///`endif
-	///.porb_h(gpio_analog[3]),	// 3.3V domain output
-	///.porb_l(io11),			// 1.8V domain output
-	///.por_l(io12)			// 1.8V domain output
-    ///);
-
-    // Instantiate 2nd POR with the analog power supply on one of the
-    // analog pins.  NOTE:  io_analog[4] = mproj_io[18] and is the same
-    // pad with io_clamp_high/low[0].
-
-    ///`ifdef USE_POWER_PINS
-	///assign isupply = io_analog[4];
-    ///	assign io_clamp_high[0] = isupply;
-    ///	assign io_clamp_low[0] = vssa1;
-
-	// Tie off remaining clamps
-    ///	assign io_clamp_high[2:1] = vssa1;
-    ///	assign io_clamp_low[2:1] = vssa1;
-    ///`endif
-
-    // Monitor the 3.3V output with mprj_io[25] = gpio_analog[7]
-    // Monitor the 1.8V outputs with mprj_io[26,27] = io_out[15,16]
-
-    ///example_por por2 (
-	///`ifdef USE_POWER_PINS
-	///    .vdd3v3(isupply),
-	///    .vdd1v8(vccd1),
-	///    .vss(vssa1),
-	///`endif
-	///.porb_h(gpio_analog[7]),	// 3.3V domain output
-	///.porb_l(io15),			// 1.8V domain output
-	///.por_l(io16)			// 1.8V domain output
+    adc_bridge bridge0 (
+        `ifdef USE_POWER_PINS
+            .VDD(vccd1),
+            .VSS(vssd1),
+        `endif
+        .clk(io_in[13]),
+        .rst_n(io_in[11]),
+        .dat_i(io_in[7]),
+        .load(io_in[8]),
+        .adc_res(res),
+        .adc_conv_finished(adc_fin),
+        .adc_conv_finished_osr(adc_fin_osr),
+        .adc_cfg1(cfg1),
+        .adc_cfg2(cfg2),
+        .dat_o(io_out[6]),
+        .conv_finish(io_out[5]),
+        .tie1(io_oeb[6:5]),
+        .tie0(io_oeb[13:7])
     );
 
 endmodule
