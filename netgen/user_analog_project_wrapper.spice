@@ -1,4 +1,5 @@
-** sch_path: /foss/designs/sky130_adc_202311/xschem/user_analog_project_wrapper.sch
+* sch_path: /foss/designs/sky130_adc_202311/xschem/user_analog_project_wrapper.sch
+
 .subckt user_analog_project_wrapper vdda1 vdda2 vssa1 vssa2 vccd1 vccd2 vssd1 vssd2 wb_clk_i
 + wb_rst_i wbs_stb_i wbs_cyc_i wbs_we_i wbs_sel_i[3] wbs_sel_i[2] wbs_sel_i[1] wbs_sel_i[0] wbs_dat_i[31]
 + wbs_dat_i[30] wbs_dat_i[29] wbs_dat_i[28] wbs_dat_i[27] wbs_dat_i[26] wbs_dat_i[25] wbs_dat_i[24] wbs_dat_i[23]
@@ -84,11 +85,6 @@
 + la_oenb[21] la_oenb[20] la_oenb[19] la_oenb[18] la_oenb[17] la_oenb[16] la_oenb[15] la_oenb[14] la_oenb[13]
 + la_oenb[12] la_oenb[11] la_oenb[10] la_oenb[9] la_oenb[8] la_oenb[7] la_oenb[6] la_oenb[5] la_oenb[4]
 + la_oenb[3] la_oenb[2] la_oenb[1] la_oenb[0]
-*.PININFO vdda1:B vdda2:B vssa1:B vssa2:B vccd1:B vccd2:B vssd1:B vssd2:B wb_clk_i:I wb_rst_i:I
-*+ wbs_stb_i:I wbs_cyc_i:I wbs_we_i:I wbs_sel_i[3:0]:I wbs_dat_i[31:0]:I wbs_adr_i[31:0]:I wbs_ack_o:O
-*+ wbs_dat_o[31:0]:O la_data_in[127:0]:I la_data_out[127:0]:O io_in[26:0]:I io_in_3v3[26:0]:I user_clock2:I
-*+ io_out[26:0]:O io_oeb[26:0]:O gpio_analog[17:0]:B gpio_noesd[17:0]:B io_analog[10:0]:B io_clamp_high[2:0]:B
-*+ io_clamp_low[2:0]:B user_irq[2:0]:O la_oenb[127:0]:I
 x1 vccd1 vssd1 io_in[11] io_in[13] io_in[12] io_out[5] io_in[8] io_in[7] io_out[6] net1 net2
 + gpio_analog[3] gpio_analog[2] adc_wrapper
 R1 io_oeb[5] net1 sky130_fd_pr__res_generic_m3 W=0.3 L=0.6 m=1
@@ -101,12 +97,6 @@ R7 io_oeb[11] net2 sky130_fd_pr__res_generic_m3 W=0.3 L=0.6 m=1
 R8 io_oeb[12] net2 sky130_fd_pr__res_generic_m3 W=0.3 L=0.6 m=1
 R9 io_oeb[13] net2 sky130_fd_pr__res_generic_m3 W=0.3 L=0.6 m=1
 .ends
-
-* Netlist (handwritten) for adc_wrapper.mag
-* Harald Pretl, IIC, JKU, 2023
-
-*.include /foss/designs/sky130_adc_202311/lvs/adc_top.spice
-*.include /foss/designs/sky130_adc_202311/lvs/adc_bridge.spice
 
 .subckt adc_wrapper VDD VSS rst_n clk conv_start conv_finish
 + load dati dato tie0 tie1 inp_ana inn_ana
@@ -135,9 +125,6 @@ XBRIDGE0 VDD VSS rst_n clk load dati dato tie0 tie1
 + _res[7] _res[6] _res[5] _res[4] _res[3] _res[2] _res[1] _res[0] adc_bridge
 
 .ends
-* Netlist for adc_top.mag
-* Created by PEX from magic file after toplevel assembly by OpenLane
-* Harald Pretl, IIC, JKU, 2023
 
 .subckt sky130_fd_sc_hd__dfrtp_1 VGND VPWR CLK D RESET_B Q VPB VNB
 X0 a_1217_47# a_27_47# a_1108_47# VNB sky130_fd_pr__nfet_01v8 ad=0.0669 pd=0.75 as=0.0711 ps=0.755 w=0.36 l=0.15
@@ -14468,10 +14455,6 @@ X_1485_ VSS VDD _1045_ core.cnb.data_register_r\[6\] core.cnb.data_register_r\[7
 + VDD VSS sky130_fd_sc_hd__nor2_4
 .ends
 
-* Netlist for adc_bridge.mag
-* Created by OpenLane2
-* Harald Pretl, IIC, JKU, 2023
-
 .subckt sky130_fd_sc_hd__decap_4 VGND VNB VPB VPWR
 X0 VPWR VGND VPWR VPB sky130_fd_pr__pfet_01v8_hvt ad=0.226 pd=2.26 as=0 ps=0 w=0.87 l=1.05
 X1 VGND VPWR VGND VNB sky130_fd_pr__nfet_01v8 ad=0.143 pd=1.62 as=0 ps=0 w=0.55 l=1.05
@@ -16404,5 +16387,3 @@ XFILLER_0_37_27 VSS VSS VDD VDD sky130_fd_sc_hd__decap_8
 XFILLER_0_78_56 VSS VSS VDD VDD sky130_fd_sc_hd__decap_4
 XFILLER_0_94_11 VSS VSS VDD VDD sky130_fd_sc_hd__decap_8
 .ends
-
-.end
