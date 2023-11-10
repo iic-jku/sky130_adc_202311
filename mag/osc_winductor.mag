@@ -1,0 +1,32 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1696325423
+<< metal5 >>
+rect 6624 -7260 7624 8740
+rect 13080 -7260 14080 8740
+use capbank  capbank_0
+timestamp 1696325208
+transform 1 0 28081 0 1 -10122
+box -4432 -9317 8974 20462
+use osc_nfet_w15_nf4_cc  osc_nfet_w15_nf4_cc_0
+timestamp 1695392077
+transform 1 0 9062 0 1 -5869
+box -4 2 2584 1789
+use osc_nfet_w30_nf4_cc  osc_nfet_w30_nf4_cc_0
+timestamp 1695394243
+transform 1 0 7764 0 1 -2623
+box 0 0 5176 1787
+use osc_nfet_w60_nf4_cc  osc_nfet_w60_nf4_cc_0
+timestamp 1695394359
+transform 1 0 4 0 1 1991
+box 5172 0 15524 1787
+use osc_nfet_w120_nf4_cc  osc_nfet_w120_nf4_cc_0
+timestamp 1695394805
+transform 1 0 4 0 1 5233
+box -4 2 20700 1789
+use uwb_inductor  uwb_inductor_0
+timestamp 1695396033
+transform 1 0 10352 0 1 12240
+box -9750 -1500 9750 18750
+<< end >>

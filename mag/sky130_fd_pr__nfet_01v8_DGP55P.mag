@@ -1,0 +1,80 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1696943242
+<< pwell >>
+rect -596 -229 596 229
+<< nmos >>
+rect -400 -19 400 81
+<< ndiff >>
+rect -458 69 -400 81
+rect -458 -7 -446 69
+rect -412 -7 -400 69
+rect -458 -19 -400 -7
+rect 400 69 458 81
+rect 400 -7 412 69
+rect 446 -7 458 69
+rect 400 -19 458 -7
+<< ndiffc >>
+rect -446 -7 -412 69
+rect 412 -7 446 69
+<< psubdiff >>
+rect -560 159 -464 193
+rect 464 159 560 193
+rect -560 97 -526 159
+rect 526 97 560 159
+rect -560 -159 -526 -97
+rect 526 -159 560 -97
+rect -560 -193 -464 -159
+rect 464 -193 560 -159
+<< psubdiffcont >>
+rect -464 159 464 193
+rect -560 -97 -526 97
+rect 526 -97 560 97
+rect -464 -193 464 -159
+<< poly >>
+rect -400 81 400 107
+rect -400 -57 400 -19
+rect -400 -91 -384 -57
+rect 384 -91 400 -57
+rect -400 -107 400 -91
+<< polycont >>
+rect -384 -91 384 -57
+<< locali >>
+rect -560 159 -464 193
+rect 464 159 560 193
+rect -560 97 -526 159
+rect 526 97 560 159
+rect -446 69 -412 85
+rect -446 -23 -412 -7
+rect 412 69 446 85
+rect 412 -23 446 -7
+rect -400 -91 -384 -57
+rect 384 -91 400 -57
+rect -560 -159 -526 -97
+rect 526 -159 560 -97
+rect -560 -193 -464 -159
+rect 464 -193 560 -159
+<< viali >>
+rect -446 -7 -412 69
+rect 412 -7 446 69
+rect -384 -91 384 -57
+<< metal1 >>
+rect -452 69 -406 81
+rect -452 -7 -446 69
+rect -412 -7 -406 69
+rect -452 -19 -406 -7
+rect 406 69 452 81
+rect 406 -7 412 69
+rect 446 -7 452 69
+rect 406 -19 452 -7
+rect -396 -57 396 -51
+rect -396 -91 -384 -57
+rect 384 -91 396 -57
+rect -396 -97 396 -91
+<< properties >>
+string FIXED_BBOX -543 -176 543 176
+string gencell sky130_fd_pr__nfet_01v8
+string library sky130
+string parameters w 0.5 l 4 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 0 botc 1 poverlap 0 doverlap 1 lmin 0.15 wmin 0.42 compatible {sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_lvt  sky130_fd_bs_flash__special_sonosfet_star  sky130_fd_pr__nfet_g5v0d10v5 sky130_fd_pr__nfet_05v0_nvt  sky130_fd_pr__nfet_03v3_nvt} full_metal 1 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0
+<< end >>

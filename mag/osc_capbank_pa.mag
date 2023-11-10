@@ -1,0 +1,29 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1696854327
+use capbank  capbank_0
+timestamp 1696854327
+transform -1 0 12625 0 -1 -49628
+box -4432 -9317 8974 20462
+use capbank  capbank_1
+timestamp 1696854327
+transform 1 0 8083 0 1 -10120
+box -4432 -9317 8974 20462
+use osc_total  osc_total_0
+timestamp 1696854327
+transform 1 0 2 0 1 -27898
+box -3210 -7592 23916 59004
+use pa_total  pa_total_0
+timestamp 1696854327
+transform 1 0 -4393 0 1 -65194
+box -2753 -41954 32049 32036
+use sky130_fd_pr__res_generic_m5_EGUVWD  sky130_fd_pr__res_generic_m5_EGUVWD_0
+timestamp 1696854327
+transform 1 0 13582 0 1 10599
+box -500 -257 500 257
+use sky130_fd_pr__res_generic_m5_EGUVWD  sky130_fd_pr__res_generic_m5_EGUVWD_1
+timestamp 1696854327
+transform 1 0 7126 0 1 10599
+box -500 -257 500 257
+<< end >>

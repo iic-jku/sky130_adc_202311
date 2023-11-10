@@ -1,0 +1,13 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1698131850
+use pa_nfet_w60_nf4  pa_nfet_w60_nf4_0
+timestamp 1698131850
+transform 1 0 4752 0 1 0
+box 0 -93 4858 1813
+use pa_nfet_w60_nf4  pa_nfet_w60_nf4_1
+timestamp 1698131850
+transform 1 0 0 0 1 0
+box 0 -93 4858 1813
+<< end >>

@@ -1,0 +1,8 @@
+magic
+tech sky130A
+timestamp 1695367189
+use coil2  coil2_0
+timestamp 1695367189
+transform 0 1 -6000 -1 0 7025
+box -8374 17250 8376 34651
+<< end >>

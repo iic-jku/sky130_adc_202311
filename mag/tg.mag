@@ -1,0 +1,89 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1697552263
+<< nwell >>
+rect -736 904 34 1202
+rect 38 906 154 978
+rect -736 784 -152 904
+rect -2 784 34 904
+rect -736 564 34 784
+<< pwell >>
+rect -736 202 -148 564
+<< pdiff >>
+rect 86 912 138 972
+<< locali >>
+rect -152 896 -2 982
+rect -312 784 -2 896
+rect 388 782 538 864
+rect -116 698 92 740
+rect -116 392 84 434
+rect -312 254 -2 354
+rect -116 154 -2 254
+rect 326 154 538 354
+rect 248 62 282 96
+<< viali >>
+rect -424 682 -350 720
+<< metal1 >>
+rect -274 1076 -200 1082
+rect -274 1020 -268 1076
+rect -206 1020 -200 1076
+rect -274 1014 -200 1020
+rect 176 1076 244 1082
+rect 176 1020 182 1076
+rect 238 1020 244 1076
+rect 176 1014 244 1020
+rect -268 726 -200 1014
+rect 80 972 144 978
+rect 80 912 86 972
+rect 138 912 144 972
+rect 80 906 144 912
+rect 276 972 340 978
+rect 276 912 282 972
+rect 334 912 340 972
+rect 276 906 340 912
+rect 188 854 252 860
+rect 188 794 194 854
+rect 246 794 252 854
+rect 188 788 252 794
+rect 188 784 234 788
+rect -436 720 -200 726
+rect -436 682 -424 720
+rect -350 682 -200 720
+rect -436 676 -200 682
+rect 90 354 138 784
+rect 186 352 234 784
+rect -528 50 188 108
+<< via1 >>
+rect -268 1020 -206 1076
+rect 182 1020 238 1076
+rect 86 912 138 972
+rect 282 912 334 972
+rect 194 794 246 854
+<< metal2 >>
+rect -276 1076 244 1082
+rect -276 1020 -268 1076
+rect -206 1020 182 1076
+rect 238 1020 244 1076
+rect -276 1014 244 1020
+rect 86 972 340 978
+rect 138 912 282 972
+rect 334 912 340 972
+rect 86 906 340 912
+rect 188 854 574 860
+rect 188 794 194 854
+rect 246 794 574 854
+rect 188 788 574 794
+use sky130_fd_pr__nfet_01v8_ZRZL87  sky130_fd_pr__nfet_01v8_ZRZL87_0
+timestamp 1695375165
+transform 1 0 211 0 -1 254
+box -363 -310 363 310
+use sky130_fd_pr__pfet_01v8_3HMKL2  sky130_fd_pr__pfet_01v8_3HMKL2_0
+timestamp 1695375165
+transform 1 0 211 0 1 883
+box -363 -319 363 319
+use sky130_fd_sc_hd__inv_1  sky130_fd_sc_hd__inv_1_0 $PDKPATH/libs.ref/sky130_fd_sc_hd/mag
+timestamp 1676037725
+transform 1 0 -586 0 1 303
+box -38 -48 314 592
+<< end >>

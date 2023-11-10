@@ -1,0 +1,77 @@
+magic
+tech sky130A
+magscale 1 2
+timestamp 1697199953
+<< locali >>
+rect 2024 498 2354 601
+rect 3126 498 3456 601
+rect 1898 151 1978 451
+rect 2400 151 2480 451
+rect 2886 151 2966 451
+rect 3000 151 3080 451
+rect 3502 151 3582 451
+rect 1898 -581 1978 -481
+rect 2100 -581 2180 -481
+rect 2214 -581 2294 -481
+rect 3300 -581 3380 -481
+rect 3502 -581 3582 -481
+rect 2006 -721 2072 -619
+rect 3408 -721 3474 -619
+<< metal1 >>
+rect 2640 492 2840 538
+rect 2287 -481 2335 3
+rect 2587 -181 2635 151
+rect 2716 -37 2764 492
+rect 2714 -43 2766 -37
+rect 2714 -149 2766 -143
+rect 2585 -187 2637 -181
+rect 2585 -293 2637 -287
+rect 2587 -333 2635 -293
+rect 2716 -613 2764 -149
+rect 2845 -333 2893 151
+rect 3145 -181 3193 3
+rect 3143 -187 3195 -181
+rect 3143 -293 3195 -287
+rect 3145 -481 3193 -293
+rect 2340 -659 3140 -613
+<< via1 >>
+rect 2714 -143 2766 -43
+rect 2585 -287 2637 -187
+rect 3143 -287 3195 -187
+<< metal2 >>
+rect 2714 -43 2766 -37
+rect 1828 -141 2714 -45
+rect 2766 -141 3652 -45
+rect 2714 -149 2766 -143
+rect 2585 -187 2637 -181
+rect 1828 -285 2585 -189
+rect 3143 -187 3195 -181
+rect 2637 -285 3143 -189
+rect 2585 -293 2637 -287
+rect 3195 -285 3652 -189
+rect 3143 -293 3195 -287
+use sky130_fd_pr__nfet_01v8_DGP55P  sky130_fd_pr__nfet_01v8_DGP55P_0
+timestamp 1696943242
+transform 1 0 2740 0 1 -562
+box -596 -229 596 229
+use sky130_fd_pr__nfet_01v8_L9WNCD  sky130_fd_pr__nfet_01v8_L9WNCD_0
+timestamp 1696943731
+transform 1 0 3441 0 1 -562
+box -211 -229 211 229
+use sky130_fd_pr__nfet_01v8_L9WNCD  sky130_fd_pr__nfet_01v8_L9WNCD_1
+timestamp 1696943731
+transform 1 0 2039 0 1 -562
+box -211 -229 211 229
+use sky130_fd_pr__pfet_01v8_4N94TK  sky130_fd_pr__pfet_01v8_4N94TK_0
+timestamp 1696943242
+transform 1 0 3291 0 1 337
+box -361 -334 361 334
+use sky130_fd_pr__pfet_01v8_4N94TK  sky130_fd_pr__pfet_01v8_4N94TK_1
+timestamp 1696943242
+transform 1 0 2189 0 1 337
+box -361 -334 361 334
+use sky130_fd_pr__pfet_01v8_ADYTEV  sky130_fd_pr__pfet_01v8_ADYTEV_0
+timestamp 1696943242
+transform 1 0 2740 0 1 337
+box -296 -334 296 334
+<< end >>
