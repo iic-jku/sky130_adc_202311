@@ -24,6 +24,13 @@ if true; then
 	./iic-lvs.sh -w "$RESDIR" -s xschem/$CELL.spice -l mag/$CELL.mag -c $CELL || ERROR=1
 fi
 
+if true; then
+	CELL=user_analog_project_wrapper
+	echo "[INFO] Checking cell $CELL"
+	./iic-drc.sh -w "$RESDIR" -m mag/$CELL.mag || ERROR=1
+	./iic-lvs.sh -w "$RESDIR" -s xschem/$CELL.spice -l mag/$CELL.mag -c $CELL || ERROR=1
+fi
+
 if [ $ERROR -eq 1 ]; then
 	echo "==="
 	echo "[ERROR] Layout verification FAILED! Check results!"
