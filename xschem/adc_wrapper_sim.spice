@@ -1,0 +1,32 @@
+* Netlist (handwritten) for adc_wrapper.mag
+* Patrick Fath, IIC, JKU, 2023
+* Netlist for simulation, changes:
+* -) netlist includes removed
+
+.subckt adc_wrapper VDD VSS rst_n clk conv_start conv_finish
++ load dati dato tie0 tie1 inp_ana inn_ana
+
+XADC0 VDD VSS inp_ana inn_ana rst_n clk conv_start 
++ _conv_finish_out _conv_finish_osr_out
++ _cfg1[15] _cfg1[14] _cfg1[13] _cfg1[12] _cfg1[11] _cfg1[10]
++ _cfg1[9] _cfg1[8] _cfg1[7] _cfg1[6] _cfg1[5] _cfg1[4]
++ _cfg1[3] _cfg1[2] _cfg1[1] _cfg1[0]
++ _cfg2[15] _cfg2[14] _cfg2[13] _cfg2[12] _cfg2[11] _cfg2[10]
++ _cfg2[9] _cfg2[8] _cfg2[7] _cfg2[6] _cfg2[5] _cfg2[4]
++ _cfg2[3] _cfg2[2] _cfg2[1] _cfg2[0]
++ _res[15] _res[14] _res[13] _res[12] _res[11] _res[10]
++ _res[9] _res[8] _res[7] _res[6] _res[5] _res[4]
++ _res[3] _res[2] _res[1] _res[0] adc_top
+
+XBRIDGE0 VDD VSS rst_n clk load dati dato tie0 tie1
++ _conv_finish_out _conv_finish_osr_out conv_finish
++ _cfg1[15] _cfg1[14] _cfg1[13] _cfg1[12] _cfg1[11] _cfg1[10] _cfg1[9]
++ _cfg1[8] _cfg1[7] _cfg1[6] _cfg1[5] _cfg1[4] _cfg1[3] _cfg1[2] _cfg1[1]
++ _cfg1[0]
++ _cfg2[15] _cfg2[14] _cfg2[13] _cfg2[12] _cfg2[11] _cfg2[10] _cfg2[9]
++ _cfg2[8] _cfg2[7] _cfg2[6] _cfg2[5] _cfg2[4] _cfg2[3] _cfg2[2] _cfg2[1]
++ _cfg2[0]
++ _res[15] _res[14] _res[13] _res[12] _res[11] _res[10] _res[9] _res[8]
++ _res[7] _res[6] _res[5] _res[4] _res[3] _res[2] _res[1] _res[0] adc_bridge
+
+.ends
