@@ -1,0 +1,32 @@
+timestamp 1698131850
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use pa_nfet_w30_nf4 pa_nfet_w30_nf4_1 1 0 54 0 1 -8
+use pa_nfet_w30_nf4 pa_nfet_w30_nf4_0 1 0 2430 0 1 -8
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "pa_nfet_w30_nf4_0/pa_nfet_w15_nf4_1/m1_199_1332#" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1D" -2.27374e-12
+cap "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M2G" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_1/VSUB" -14.4418
+cap "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_1/VSUB" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1G" 2.70909
+cap "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M2G" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1D" 5.32907e-15
+cap "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1G" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1D" -5.68434e-14
+cap "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_1/VSUB" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1D" -0.301809
+cap "pa_nfet_w30_nf4_0/pa_nfet_w15_nf4_1/m1_199_1332#" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M2G" -1.42109e-14
+cap "pa_nfet_w30_nf4_0/pa_nfet_w15_nf4_1/m1_199_1332#" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1G" -1.42109e-14
+cap "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M2G" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1G" -46.2154
+cap "pa_nfet_w30_nf4_0/pa_nfet_w15_nf4_1/m1_199_1332#" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_1/VSUB" -0.468376
+cap "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M2G" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1G" 0.0209679
+cap "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_1/VSUB" "pa_nfet_w30_nf4_0/pa_nfet_w15_nf4_1/m1_199_1332#" -46.7783
+cap "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1D" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_1/VSUB" 2.54344
+cap "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_1/VSUB" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1G" -1.77636e-15
+cap "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1D" "pa_nfet_w30_nf4_0/pa_nfet_w15_nf4_1/m1_199_1332#" -48.9991
+cap "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_1/VSUB" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M2G" -1.99849
+merge "pa_nfet_w30_nf4_0/VSUBS" "pa_nfet_w30_nf4_1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pa_nfet_w30_nf4_1/VSUBS" "VSUBS"
+merge "pa_nfet_w30_nf4_0/pa_nfet_w15_nf4_1/m1_199_1332#" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/m1_199_1332#" -46.2006 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10176 -404 0 0 0 0 0 0 0 0
+merge "pa_nfet_w30_nf4_0/pa_nfet_w15_nf4_1/M1D" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1D" -65.8136 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10176 -404 0 0 0 0 0 0 0 0
+merge "pa_nfet_w30_nf4_0/pa_nfet_w15_nf4_1/M2G" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M2G" -49.4271 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10176 -404 0 0 0 0 0 0 0 0
+merge "pa_nfet_w30_nf4_0/pa_nfet_w15_nf4_1/M1G" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_0/M1G" -158.798 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10176 -404 0 0 0 0 0 0 0 0
+merge "pa_nfet_w30_nf4_0/pa_nfet_w15_nf4_1/VSUB" "pa_nfet_w30_nf4_1/pa_nfet_w15_nf4_1/VSUB" -1069.71 0 0 0 0 0 0 0 0 0 0 -37332 -2264 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -91332 -2408 0 0 -10176 -404 0 0 0 0 0 0 0 0

@@ -1,0 +1,431 @@
+timestamp 1515178157
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use adc_noise_decoup_cell2 adc_noise_decoup_cell2_1 1 0 -450 0 1 420
+use adc_noise_decoup_cell2 adc_noise_decoup_cell2_0 1 0 -450 0 1 -3170
+use adc_comp_buffer adc_comp_buffer_1 1 0 2737 0 -1 -860
+use adc_comp_buffer adc_comp_buffer_0 1 0 2737 0 1 -192
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__nfet_01v8_lvt l=l w=w a1=as p1=ps a2=ad p2=pd
+port "bp" 1 1272 -469 1318 -427 m1
+port "op" 4 1425 -668 1485 -608 m4
+port "bn" 2 2235 -477 2281 -435 m1
+port "on" 3 1427 -548 1487 -488 m4
+port "VPWR" 5 4658 -3378 4978 2218 m4
+port "VGND" 6 4268 -3378 4588 2218 m4
+node "li_4048_n2434#" 15 982.265 4048 -2434 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10296 406 138608 2596 12992 456 0 0 0 0 0 0 0 0
+node "li_4048_1156#" 15 950.571 4048 1156 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10296 406 138608 2596 12992 456 0 0 0 0 0 0 0 0
+node "a_1611_n1292#" 1860 2255.59 1611 -1292 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 35760 2360 0 0 11352 608 15752 868 16724 896 168244 5492 0 0 0 0 0 0
+node "a_n28_n1170#" 12480 1499.2 -28 -1170 ndif 0 0 0 0 0 0 0 0 203000 8624 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 123284 8204 118182 5766 0 0 0 0 0 0 0 0 0 0
+node "a_470_n1001#" 4244 433.877 470 -1001 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 82962 5454 0 0 4080 262 4720 278 5986 310 5400 294 0 0 0 0 0 0
+node "a_30_n1001#" 4228 438.139 30 -1001 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 82662 5434 0 0 4080 262 4720 278 5986 310 5472 296 0 0 0 0 0 0
+node "a_1877_n348#" 9386 125.332 1877 -348 pdif 0 0 0 0 0 0 0 0 0 0 116000 4580 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69360 4420 26652 1664 0 0 0 0 0 0 0 0 0 0
+node "bp" 5908 1790.89 1272 -469 m1 0 0 0 0 0 0 0 0 26400 932 23200 916 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75832 4670 0 0 37952 2346 101264 6176 35852 2246 0 0 0 0 0 0 0 0
+node "op" 6172 2088.49 1425 -668 m4 0 0 0 0 0 0 0 0 46400 1832 12400 648 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49864 3260 0 0 39410 2608 39707 2074 26187 1300 118450 4198 237396 8228 0 0 0 0
+node "a_12_n446#" 7136 3340.36 12 -446 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 181652 10180 0 0 27198 1780 93204 3264 61392 4148 0 0 0 0 0 0 0 0
+node "a_1090_n348#" 9386 115.779 1090 -348 pdif 0 0 0 0 0 0 0 0 0 0 116000 4580 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 69360 4420 26652 1664 0 0 0 0 0 0 0 0 0 0
+node "bn" 5911 1817.75 2235 -477 m1 0 0 0 0 0 0 0 0 26400 932 23200 916 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 75832 4670 0 0 37952 2346 111936 6992 41604 2574 0 0 0 0 0 0 0 0
+node "on" 6188 1546.26 1427 -548 m4 0 0 0 0 0 0 0 0 46400 1832 12400 648 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 49800 3268 0 0 39654 2616 39530 2088 26002 1294 118738 4208 236976 8214 0 0 0 0
+node "VPWR" 46713 17357.7 4658 -3378 m4 0 0 0 0 2014419 13490 0 0 278738 12088 89800 4100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 396160 18984 1198808 19454 118598 2002 202369 4210 1790720 11832 0 0 0 0
+substrate "VGND" 0 0 4268 -3378 m4 0 0 0 0 0 0 0 0 148800 5892 661082 25046 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 39588 2482 0 0 4589844 60244 2097404 25896 663022 9574 906893 15260 2442812 21154 0 0 0 0
+cap "on" "a_1611_n1292#" 52.6198
+cap "bn" "op" 224.255
+cap "a_n28_n1170#" "a_1611_n1292#" 105.333
+cap "a_1877_n348#" "bp" 123.408
+cap "on" "op" 3298.01
+cap "a_1877_n348#" "VPWR" 690.298
+cap "a_470_n1001#" "bn" 0.927197
+cap "a_30_n1001#" "a_12_n446#" 174.362
+cap "VPWR" "li_4048_n2434#" 16.7644
+cap "a_12_n446#" "a_1090_n348#" 0.713143
+cap "bp" "a_1611_n1292#" 135.29
+cap "on" "a_470_n1001#" 323.024
+cap "a_n28_n1170#" "op" 703.879
+cap "VPWR" "a_1611_n1292#" 56.1434
+cap "a_n28_n1170#" "a_470_n1001#" 125.868
+cap "op" "bp" 86.194
+cap "VPWR" "op" 589.895
+cap "on" "bn" 97.1743
+cap "a_1877_n348#" "a_1090_n348#" 12.6535
+cap "a_1877_n348#" "a_12_n446#" 0.028292
+cap "a_470_n1001#" "bp" 5.93312
+cap "VPWR" "a_470_n1001#" 29.2126
+cap "a_30_n1001#" "a_1611_n1292#" 27.0693
+cap "a_n28_n1170#" "bn" 5.79599
+cap "a_1611_n1292#" "a_1090_n348#" 4.43035
+cap "a_12_n446#" "a_1611_n1292#" 222.102
+cap "a_n28_n1170#" "on" 689.709
+cap "bn" "bp" 1937.42
+cap "a_30_n1001#" "op" 293.154
+cap "VPWR" "bn" 315.67
+cap "op" "a_1090_n348#" 5.02696
+cap "op" "a_12_n446#" 133.809
+cap "on" "bp" 183.752
+cap "a_30_n1001#" "a_470_n1001#" 29.3175
+cap "on" "VPWR" 974.036
+cap "a_1877_n348#" "a_1611_n1292#" 1.36027
+cap "a_470_n1001#" "a_12_n446#" 176.503
+cap "a_n28_n1170#" "bp" 4.8387
+cap "a_n28_n1170#" "VPWR" 43.743
+cap "a_1877_n348#" "op" 111.041
+cap "a_30_n1001#" "bn" 0.25969
+cap "bn" "a_12_n446#" 43.0093
+cap "bn" "a_1090_n348#" 124.001
+cap "VPWR" "bp" 285.827
+cap "op" "a_1611_n1292#" 167.758
+cap "a_30_n1001#" "on" 17.7566
+cap "on" "a_12_n446#" 199.364
+cap "on" "a_1090_n348#" 142.653
+cap "a_470_n1001#" "a_1611_n1292#" 25.9235
+cap "a_n28_n1170#" "a_30_n1001#" 125.972
+cap "a_n28_n1170#" "a_12_n446#" 615.652
+cap "VPWR" "li_4048_1156#" 45.2421
+cap "a_1877_n348#" "bn" 347.482
+cap "a_30_n1001#" "bp" 0.00104559
+cap "a_470_n1001#" "op" 14.8798
+cap "bp" "a_12_n446#" 4.25563
+cap "bp" "a_1090_n348#" 336.237
+cap "a_1877_n348#" "on" 36.405
+cap "a_30_n1001#" "VPWR" 39.7108
+cap "bn" "a_1611_n1292#" 102.146
+cap "VPWR" "a_1090_n348#" 708.582
+cap "VPWR" "a_12_n446#" 899.304
+device msubckt sky130_fd_pr__nfet_01v8 1997 -1188 1998 -1187 l=30 w=400 "VGND" "VGND" 60 0 "VGND" 0 0 "VGND" 800 12400,462
+device msubckt sky130_fd_pr__nfet_01v8 1905 -1188 1906 -1187 l=30 w=400 "VGND" "a_1611_n1292#" 60 0 "bn" 400 13200,466 "VGND" 400 12400,462
+device msubckt sky130_fd_pr__nfet_01v8 1809 -1188 1810 -1187 l=30 w=400 "VGND" "bp" 60 0 "VGND" 400 13200,466 "bn" 400 13200,466
+device msubckt sky130_fd_pr__nfet_01v8 1713 -1188 1714 -1187 l=30 w=400 "VGND" "bn" 60 0 "bp" 400 13200,466 "VGND" 400 13200,466
+device msubckt sky130_fd_pr__nfet_01v8 1617 -1188 1618 -1187 l=30 w=400 "VGND" "a_1611_n1292#" 60 0 "VGND" 400 12400,462 "bp" 400 13200,466
+device msubckt sky130_fd_pr__nfet_01v8 1525 -1188 1526 -1187 l=30 w=400 "VGND" "VGND" 60 0 "VGND" 0 0 "VGND" 800 24800,924
+device msubckt sky130_fd_pr__nfet_01v8 822 -1170 823 -1169 l=30 w=100 "VGND" "a_12_n446#" 60 0 "a_n28_n1170#" 0 0 "a_n28_n1170#" 200 2900,158
+device msubckt sky130_fd_pr__nfet_01v8 734 -1170 735 -1169 l=30 w=100 "VGND" "a_12_n446#" 60 0 "VGND" 100 2900,158 "a_n28_n1170#" 100 2900,158
+device msubckt sky130_fd_pr__nfet_01v8 646 -1170 647 -1169 l=30 w=100 "VGND" "a_12_n446#" 60 0 "a_n28_n1170#" 100 2900,158 "VGND" 100 2900,158
+device msubckt sky130_fd_pr__nfet_01v8 558 -1170 559 -1169 l=30 w=100 "VGND" "a_12_n446#" 60 0 "VGND" 100 2900,158 "a_n28_n1170#" 100 2900,158
+device msubckt sky130_fd_pr__nfet_01v8 470 -1170 471 -1169 l=30 w=100 "VGND" "a_12_n446#" 60 0 "a_n28_n1170#" 100 2900,158 "VGND" 100 2900,158
+device msubckt sky130_fd_pr__nfet_01v8 382 -1170 383 -1169 l=30 w=100 "VGND" "a_12_n446#" 60 0 "VGND" 100 2900,158 "a_n28_n1170#" 100 2900,158
+device msubckt sky130_fd_pr__nfet_01v8 294 -1170 295 -1169 l=30 w=100 "VGND" "a_12_n446#" 60 0 "a_n28_n1170#" 100 2900,158 "VGND" 100 2900,158
+device msubckt sky130_fd_pr__nfet_01v8 206 -1170 207 -1169 l=30 w=100 "VGND" "a_12_n446#" 60 0 "VGND" 100 2900,158 "a_n28_n1170#" 100 2900,158
+device msubckt sky130_fd_pr__nfet_01v8 118 -1170 119 -1169 l=30 w=100 "VGND" "a_12_n446#" 60 0 "a_n28_n1170#" 100 2900,158 "VGND" 100 2900,158
+device msubckt sky130_fd_pr__nfet_01v8 30 -1170 31 -1169 l=30 w=100 "VGND" "a_12_n446#" 60 0 "a_n28_n1170#" 0 0 "a_n28_n1170#" 200 5800,316
+device msubckt sky130_fd_pr__nfet_01v8_lvt 822 -973 823 -972 l=30 w=400 "VGND" "a_470_n1001#" 60 0 "a_n28_n1170#" 0 0 "a_n28_n1170#" 800 11600,458
+device msubckt sky130_fd_pr__nfet_01v8_lvt 734 -973 735 -972 l=30 w=400 "VGND" "a_470_n1001#" 60 0 "on" 400 11600,458 "a_n28_n1170#" 400 11600,458
+device msubckt sky130_fd_pr__nfet_01v8_lvt 646 -973 647 -972 l=30 w=400 "VGND" "a_470_n1001#" 60 0 "a_n28_n1170#" 400 11600,458 "on" 400 11600,458
+device msubckt sky130_fd_pr__nfet_01v8_lvt 558 -973 559 -972 l=30 w=400 "VGND" "a_470_n1001#" 60 0 "on" 400 11600,458 "a_n28_n1170#" 400 11600,458
+device msubckt sky130_fd_pr__nfet_01v8_lvt 470 -973 471 -972 l=30 w=400 "VGND" "a_470_n1001#" 60 0 "a_n28_n1170#" 400 11600,458 "on" 400 11600,458
+device msubckt sky130_fd_pr__nfet_01v8_lvt 382 -973 383 -972 l=30 w=400 "VGND" "a_30_n1001#" 60 0 "op" 400 11600,458 "a_n28_n1170#" 400 11600,458
+device msubckt sky130_fd_pr__nfet_01v8_lvt 294 -973 295 -972 l=30 w=400 "VGND" "a_30_n1001#" 60 0 "a_n28_n1170#" 400 11600,458 "op" 400 11600,458
+device msubckt sky130_fd_pr__nfet_01v8_lvt 206 -973 207 -972 l=30 w=400 "VGND" "a_30_n1001#" 60 0 "op" 400 11600,458 "a_n28_n1170#" 400 11600,458
+device msubckt sky130_fd_pr__nfet_01v8_lvt 118 -973 119 -972 l=30 w=400 "VGND" "a_30_n1001#" 60 0 "a_n28_n1170#" 400 11600,458 "op" 400 11600,458
+device msubckt sky130_fd_pr__nfet_01v8_lvt 30 -973 31 -972 l=30 w=400 "VGND" "a_30_n1001#" 60 0 "a_n28_n1170#" 0 0 "a_n28_n1170#" 800 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 2375 -348 2376 -347 l=30 w=400 "VPWR" "op" 60 0 "a_1877_n348#" 0 0 "a_1877_n348#" 800 11600,458
+device msubckt sky130_fd_pr__pfet_01v8 2287 -348 2288 -347 l=30 w=400 "VPWR" "op" 60 0 "bn" 400 11600,458 "a_1877_n348#" 400 11600,458
+device msubckt sky130_fd_pr__pfet_01v8 2199 -348 2200 -347 l=30 w=400 "VPWR" "op" 60 0 "a_1877_n348#" 400 11600,458 "bn" 400 11600,458
+device msubckt sky130_fd_pr__pfet_01v8 2111 -348 2112 -347 l=30 w=400 "VPWR" "bp" 60 0 "VPWR" 400 11600,458 "a_1877_n348#" 400 11600,458
+device msubckt sky130_fd_pr__pfet_01v8 2023 -348 2024 -347 l=30 w=400 "VPWR" "bp" 60 0 "a_1877_n348#" 400 11600,458 "VPWR" 400 11600,458
+device msubckt sky130_fd_pr__pfet_01v8 1935 -348 1936 -347 l=30 w=400 "VPWR" "bp" 60 0 "a_1877_n348#" 0 0 "a_1877_n348#" 800 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 1588 -348 1589 -347 l=30 w=400 "VPWR" "bn" 60 0 "a_1090_n348#" 0 0 "a_1090_n348#" 800 11600,458
+device msubckt sky130_fd_pr__pfet_01v8 1500 -348 1501 -347 l=30 w=400 "VPWR" "bn" 60 0 "VPWR" 400 11600,458 "a_1090_n348#" 400 11600,458
+device msubckt sky130_fd_pr__pfet_01v8 1412 -348 1413 -347 l=30 w=400 "VPWR" "bn" 60 0 "a_1090_n348#" 400 11600,458 "VPWR" 400 11600,458
+device msubckt sky130_fd_pr__pfet_01v8 1324 -348 1325 -347 l=30 w=400 "VPWR" "on" 60 0 "bp" 400 11600,458 "a_1090_n348#" 400 11600,458
+device msubckt sky130_fd_pr__pfet_01v8 1236 -348 1237 -347 l=30 w=400 "VPWR" "on" 60 0 "a_1090_n348#" 400 11600,458 "bp" 400 11600,458
+device msubckt sky130_fd_pr__pfet_01v8 1148 -348 1149 -347 l=30 w=400 "VPWR" "on" 60 0 "a_1090_n348#" 0 0 "a_1090_n348#" 800 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 840 -343 841 -342 l=30 w=100 "VPWR" "a_12_n446#" 60 0 "VPWR" 0 0 "VPWR" 200 3100,162
+device msubckt sky130_fd_pr__pfet_01v8 748 -343 749 -342 l=30 w=100 "VPWR" "a_12_n446#" 60 0 "on" 100 3100,162 "VPWR" 100 3100,162
+device msubckt sky130_fd_pr__pfet_01v8 656 -343 657 -342 l=30 w=100 "VPWR" "a_12_n446#" 60 0 "VPWR" 100 3100,162 "on" 100 3100,162
+device msubckt sky130_fd_pr__pfet_01v8 564 -343 565 -342 l=30 w=100 "VPWR" "a_12_n446#" 60 0 "on" 100 3100,162 "VPWR" 100 3100,162
+device msubckt sky130_fd_pr__pfet_01v8 472 -343 473 -342 l=30 w=100 "VPWR" "a_12_n446#" 60 0 "VPWR" 100 3100,162 "on" 100 3100,162
+device msubckt sky130_fd_pr__pfet_01v8 380 -343 381 -342 l=30 w=100 "VPWR" "a_12_n446#" 60 0 "op" 100 3100,162 "VPWR" 100 3100,162
+device msubckt sky130_fd_pr__pfet_01v8 288 -343 289 -342 l=30 w=100 "VPWR" "a_12_n446#" 60 0 "VPWR" 100 3100,162 "op" 100 3100,162
+device msubckt sky130_fd_pr__pfet_01v8 196 -343 197 -342 l=30 w=100 "VPWR" "a_12_n446#" 60 0 "op" 100 3100,162 "VPWR" 100 3100,162
+device msubckt sky130_fd_pr__pfet_01v8 104 -343 105 -342 l=30 w=100 "VPWR" "a_12_n446#" 60 0 "VPWR" 100 3100,162 "op" 100 3100,162
+device msubckt sky130_fd_pr__pfet_01v8 12 -343 13 -342 l=30 w=100 "VPWR" "a_12_n446#" 60 0 "VPWR" 0 0 "VPWR" 200 6200,324
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_0/nmoscap_bot" 394.595
+cap "a_1611_n1292#" "adc_noise_decoup_cell2_0/nmoscap_top" 0.372837
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "VPWR" 0.0562331
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "on" 0.0174412
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_0/nmoscap_bot" 515.697
+cap "adc_noise_decoup_cell2_0/pwell" "adc_noise_decoup_cell2_0/nmoscap_bot" 109.246
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_0/pwell" 260.031
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_0/nmoscap_bot" 3.63798e-12
+cap "adc_comp_buffer_1/VDD" "adc_noise_decoup_cell2_0/nmoscap_bot" 11.296
+cap "adc_noise_decoup_cell2_0/pwell" "adc_noise_decoup_cell2_0/nmoscap_bot" 299.445
+cap "adc_comp_buffer_1/VDD" "adc_noise_decoup_cell2_0/pwell" 6.17933
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_0/nmoscap_bot" 126.636
+cap "adc_comp_buffer_1/VDD" "adc_noise_decoup_cell2_0/nmoscap_top" 4.96572
+cap "adc_noise_decoup_cell2_0/pwell" "adc_noise_decoup_cell2_0/nmoscap_top" 38.7895
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_0/nmoscap_top" 3.73186
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_n28_n1170#" 7.93627
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "a_12_n446#" 3.55271e-15
+cap "VPWR" "a_1611_n1292#" -7.10543e-15
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_30_n1001#" 0.948802
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_bot" 145.119
+cap "a_12_n446#" "adc_noise_decoup_cell2_1/nmoscap_bot" 30.0032
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "VPWR" 7.10543e-15
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_n28_n1170#" 3.35316
+cap "a_1611_n1292#" "adc_noise_decoup_cell2_1/mimcap_bot" 7.22895
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "a_470_n1001#" -2.84217e-14
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_30_n1001#" 2.97574
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_1611_n1292#" 91.4962
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "VPWR" 10.0067
+cap "a_12_n446#" "adc_noise_decoup_cell2_0/nmoscap_top" 6.73907
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_1/mimcap_bot" 12.7526
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_470_n1001#" 0.507334
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_bot" 21.2437
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_1611_n1292#" 1.44367
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "VPWR" 0.339433
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_470_n1001#" 3.41222
+cap "adc_comp_buffer_1/in" "adc_noise_decoup_cell2_1/mimcap_bot" 0.0120792
+cap "adc_comp_buffer_0/VDD" "adc_comp_buffer_1/in" 1.77636e-15
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_0/in" 7.91006
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_12_n446#" 10.1341
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_n28_n1170#" 3.63389
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_1/out" 1.5589
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_1/VDD" 7.04904
+cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/in" 0.659989
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_1/a_26_n216#" 2.32919
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/a_26_n216#" 2.70349
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_0/in" 9.28572
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_0/in" 0.18835
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_n28_n1170#" 4.02377
+cap "a_12_n446#" "adc_noise_decoup_cell2_0/nmoscap_top" 15.7073
+cap "adc_comp_buffer_1/VDD" "adc_noise_decoup_cell2_0/nmoscap_top" 4.44215
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_1877_n348#" 0.375882
+cap "adc_comp_buffer_1/VDD" "a_1611_n1292#" 1.93765
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_1/in" 0.00412587
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_1/in" 0.98057
+cap "adc_comp_buffer_0/in" "adc_noise_decoup_cell2_1/mimcap_bot" 0.00393169
+cap "adc_comp_buffer_0/VDD" "adc_comp_buffer_0/in" -1.77636e-15
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_1611_n1292#" 225.777
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_noise_decoup_cell2_0/nmoscap_top" 1282.09
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_1/in" 11.0948
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_noise_decoup_cell2_1/nmoscap_top" 12.4264
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_1877_n348#" 0.267038
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_1090_n348#" 1.10504
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_470_n1001#" 0.452496
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_0/VDD" 0.807366
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_1611_n1292#" 31.2714
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_1/in" 9.01719
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_top" 6.87393
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "a_1611_n1292#" 0.0774648
+cap "adc_comp_buffer_0/in" "a_n28_n1170#" -8.88178e-16
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_1/out" 1.09651
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_1/in" 0.168171
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_470_n1001#" 2.01664
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_1/a_26_n216#" 2.75612
+cap "adc_comp_buffer_0/in" "adc_noise_decoup_cell2_1/nmoscap_top" 0.00412587
+cap "adc_comp_buffer_0/VDD" "adc_noise_decoup_cell2_0/nmoscap_top" 3.59783
+cap "a_1611_n1292#" "adc_noise_decoup_cell2_1/mimcap_bot" 0.00190736
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_1/out" 3.98379
+cap "adc_comp_buffer_1/out" "adc_comp_buffer_0/in" 0.9759
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_top" 1.07841
+cap "adc_comp_buffer_1/VDD" "adc_noise_decoup_cell2_0/nmoscap_bot" 3.43041
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_1/pwell" 563.175
+cap "adc_noise_decoup_cell2_1/pwell" "adc_comp_buffer_0/in" 8.33961
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_1/out" 42.9343
+cap "adc_noise_decoup_cell2_0/nmoscap_bot" "adc_comp_buffer_1/a_26_n216#" 2.13115
+cap "adc_comp_buffer_1/VDD" "adc_noise_decoup_cell2_1/pwell" 141.28
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_1/a_26_n216#" 1.87599
+cap "adc_comp_buffer_1/a_26_n216#" "adc_noise_decoup_cell2_1/pwell" 72.3811
+cap "a_1611_n1292#" "adc_comp_buffer_1/a_26_n216#" 0.0310157
+cap "adc_comp_buffer_1/in" "adc_noise_decoup_cell2_0/nmoscap_top" 6.03059
+cap "adc_comp_buffer_0/a_26_n216#" "adc_noise_decoup_cell2_1/pwell" 1.34824
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_0/out" 0.137784
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/in" 9.67979
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/a_26_n216#" 58.3038
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/VDD" 2.77062
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/out" 0.00646508
+cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/a_26_n216#" 0.277527
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_0/in" 1.23878
+cap "a_1877_n348#" "adc_noise_decoup_cell2_1/pwell" 1.21322
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/a_26_n216#" 0.0672376
+cap "adc_comp_buffer_1/VDD" "adc_noise_decoup_cell2_0/nmoscap_top" 12.013
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_1/a_26_n216#" 9.48175
+cap "adc_noise_decoup_cell2_0/nmoscap_bot" "adc_noise_decoup_cell2_1/pwell" 259.894
+cap "adc_comp_buffer_1/a_26_n216#" "adc_comp_buffer_0/in" 43.2652
+cap "adc_comp_buffer_1/out" "adc_noise_decoup_cell2_1/pwell" 59.8037
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_1/out" 0.404471
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_1/a_26_n216#" 35.9819
+cap "a_1611_n1292#" "adc_comp_buffer_1/out" 0.0257948
+cap "adc_comp_buffer_0/a_26_n216#" "adc_noise_decoup_cell2_0/nmoscap_top" 0.297193
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_1/pwell" 6.99771
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/out" 0.128376
+cap "adc_comp_buffer_1/in" "adc_noise_decoup_cell2_0/nmoscap_bot" 0.972487
+cap "adc_comp_buffer_0/a_26_n216#" "adc_comp_buffer_1/a_26_n216#" 3.7369
+cap "adc_comp_buffer_1/in" "adc_noise_decoup_cell2_1/pwell" 28.1204
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_1877_n348#" 0.8536
+cap "adc_comp_buffer_1/in" "adc_noise_decoup_cell2_1/nmoscap_top" 0.812674
+cap "adc_comp_buffer_0/out" "adc_noise_decoup_cell2_1/pwell" 0.844198
+cap "adc_comp_buffer_1/a_26_n216#" "adc_noise_decoup_cell2_1/pwell" 3.41908
+cap "adc_comp_buffer_1/a_26_n216#" "adc_comp_buffer_1/VDD" 3.08468
+cap "adc_comp_buffer_1/VDD" "adc_noise_decoup_cell2_1/pwell" 82.485
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_1/VDD" 2.55487
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_1/VDD" 0.0594627
+cap "adc_comp_buffer_1/out" "adc_noise_decoup_cell2_1/pwell" 2.04605
+cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/VDD" 3.55865
+cap "adc_noise_decoup_cell2_0/nmoscap_bot" "adc_noise_decoup_cell2_1/pwell" 311.654
+cap "adc_comp_buffer_1/VDD" "adc_noise_decoup_cell2_0/nmoscap_bot" 30.9683
+cap "adc_comp_buffer_1/in" "adc_noise_decoup_cell2_1/pwell" 0.796238
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_1/VDD" -0.245011
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_30_n1001#" 0.0125797
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "a_470_n1001#" 4.3643
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_470_n1001#" 1.68102
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "a_n28_n1170#" 0.80331
+cap "adc_noise_decoup_cell2_0/mimcap_top" "a_470_n1001#" 1.29947e-17
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_0/mimcap_bot" 0.0158677
+cap "VPWR" "adc_noise_decoup_cell2_1/nmoscap_bot" 211.529
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_0/mimcap_bot" 0.0158677
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_470_n1001#" 0.0163752
+cap "a_12_n446#" "adc_noise_decoup_cell2_0/mimcap_bot" 0.00767665
+cap "adc_noise_decoup_cell2_0/mimcap_bot" "a_30_n1001#" 0.0662902
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_30_n1001#" 0.00950007
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_470_n1001#" 9.10397
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_n28_n1170#" 7.53961
+cap "a_12_n446#" "adc_noise_decoup_cell2_1/nmoscap_top" 2.53535
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_0/nmoscap_top" 3.90926
+cap "VPWR" "adc_noise_decoup_cell2_0/mimcap_bot" -1.02677e-17
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "a_30_n1001#" 3.49508
+cap "a_12_n446#" "a_30_n1001#" 1.42109e-14
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_30_n1001#" 1.28668
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "a_470_n1001#" 0.00982511
+cap "adc_noise_decoup_cell2_0/mimcap_bot" "a_470_n1001#" 0.0338793
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_1611_n1292#" 8.68223
+cap "a_12_n446#" "adc_noise_decoup_cell2_1/nmoscap_bot" 23.5087
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_bot" 39.1597
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_bot" 12.1168
+cap "adc_noise_decoup_cell2_0/nmoscap_bot" "a_470_n1001#" 0.00524235
+cap "VPWR" "adc_noise_decoup_cell2_1/nmoscap_top" 9.64458
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "a_30_n1001#" 15.0524
+cap "VPWR" "a_30_n1001#" -7.10543e-15
+cap "a_12_n446#" "adc_noise_decoup_cell2_0/nmoscap_top" 0.000961445
+cap "a_n28_n1170#" "adc_noise_decoup_cell2_1/nmoscap_bot" 3.71374
+cap "adc_comp_buffer_0/in" "adc_noise_decoup_cell2_0/mimcap_bot" 0.00386102
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_0/mimcap_top" 1.92771e-18
+cap "adc_comp_buffer_0/out" "adc_noise_decoup_cell2_1/nmoscap_bot" 1.53575
+cap "a_470_n1001#" "adc_noise_decoup_cell2_1/nmoscap_top" 1.16265
+cap "a_12_n446#" "adc_noise_decoup_cell2_1/nmoscap_top" 6.40658
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_0/VDD" 457.78
+cap "a_470_n1001#" "adc_noise_decoup_cell2_0/nmoscap_top" 0.0350899
+cap "adc_comp_buffer_0/a_26_n216#" "adc_noise_decoup_cell2_1/nmoscap_top" 3.51208
+cap "a_1877_n348#" "adc_noise_decoup_cell2_1/nmoscap_top" 4.9324
+cap "a_1090_n348#" "adc_noise_decoup_cell2_1/nmoscap_bot" 29.4428
+cap "a_12_n446#" "adc_noise_decoup_cell2_0/nmoscap_top" 0.312882
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_0/in" 17.7251
+cap "a_470_n1001#" "adc_noise_decoup_cell2_0/nmoscap_bot" 0.00599126
+cap "adc_comp_buffer_1/in" "adc_noise_decoup_cell2_0/nmoscap_bot" 0.000774854
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_1/in" 18.6361
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_0/nmoscap_top" 0.000320482
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_0/in" 0.962952
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_noise_decoup_cell2_1/nmoscap_top" 235.179
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_bot" 5.49066
+cap "a_n28_n1170#" "adc_noise_decoup_cell2_1/nmoscap_top" 1.39801
+cap "adc_comp_buffer_0/out" "adc_noise_decoup_cell2_1/nmoscap_top" 2.02178
+cap "a_470_n1001#" "adc_noise_decoup_cell2_1/nmoscap_bot" 3.89545
+cap "adc_comp_buffer_1/in" "adc_noise_decoup_cell2_0/mimcap_bot" 0.00497415
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/VDD" -5.68434e-14
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_0/mimcap_bot" 0.00457231
+cap "a_12_n446#" "adc_noise_decoup_cell2_1/nmoscap_bot" 6.24182
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_0/VDD" 1053.68
+cap "adc_comp_buffer_0/a_26_n216#" "adc_noise_decoup_cell2_1/nmoscap_bot" 3.69453
+cap "a_1877_n348#" "adc_noise_decoup_cell2_1/nmoscap_bot" 11.7964
+cap "adc_comp_buffer_1/in" "adc_noise_decoup_cell2_0/nmoscap_top" 0.00412015
+cap "a_1090_n348#" "adc_noise_decoup_cell2_1/nmoscap_top" 12.3131
+cap "a_470_n1001#" "adc_noise_decoup_cell2_0/mimcap_bot" 0.00315383
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_0/in" 19.1843
+cap "adc_comp_buffer_1/in" "adc_noise_decoup_cell2_1/nmoscap_top" 16.6383
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_0/nmoscap_bot" 0.00325432
+cap "a_12_n446#" "adc_noise_decoup_cell2_0/nmoscap_top" 0.000427309
+cap "a_12_n446#" "adc_noise_decoup_cell2_0/mimcap_bot" 0.00196341
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_1/in" 0.110546
+cap "adc_comp_buffer_0/a_26_n216#" "adc_comp_buffer_0/VDD" 0.444519
+cap "adc_comp_buffer_1/in" "adc_noise_decoup_cell2_0/mimcap_top" 5.94837e-18
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_top" 5.0169
+cap "a_1877_n348#" "adc_noise_decoup_cell2_1/pwell" 16.6489
+cap "adc_comp_buffer_1/out" "adc_comp_buffer_0/a_26_n216#" 0.277527
+cap "adc_noise_decoup_cell2_1/pwell" "adc_comp_buffer_1/in" 5.69187
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_0/a_26_n216#" 2.56818
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_0/out" 0.310473
+cap "adc_noise_decoup_cell2_1/pwell" "adc_comp_buffer_0/in" 19.9317
+cap "adc_comp_buffer_1/a_26_n216#" "adc_noise_decoup_cell2_1/pwell" 2.18764
+cap "a_1877_n348#" "adc_comp_buffer_0/in" 4.061
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/in" 1.74657
+cap "adc_noise_decoup_cell2_1/pwell" "adc_comp_buffer_1/VDD" 491.592
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_1/pwell" 43.672
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_noise_decoup_cell2_1/pwell" 0.807907
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "a_1877_n348#" 7.3807
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_0/mimcap_top" -5.25517e-18
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_0/nmoscap_bot" 0.431795
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_1/in" 2.0417
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_1/in" 0.597942
+cap "adc_comp_buffer_1/a_26_n216#" "adc_comp_buffer_0/in" 0.0672376
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_0/in" 3.96657
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_0/in" 1.32887
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_1/VDD" 48.2128
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_1/a_26_n216#" 0.43416
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_1/VDD" 269.527
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_1/VDD" 547.076
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_bot" 4.54747e-13
+cap "adc_noise_decoup_cell2_1/pwell" "adc_comp_buffer_0/a_26_n216#" 63.6745
+cap "adc_comp_buffer_0/out" "adc_noise_decoup_cell2_1/pwell" 77.1611
+cap "adc_comp_buffer_1/in" "adc_comp_buffer_0/a_26_n216#" 0.053085
+cap "a_1877_n348#" "adc_comp_buffer_0/a_26_n216#" 4.1092
+cap "a_1877_n348#" "adc_comp_buffer_0/out" 0.028557
+cap "a_1090_n348#" "adc_comp_buffer_0/in" 0.126055
+cap "adc_comp_buffer_0/in" "adc_comp_buffer_0/a_26_n216#" 46.5864
+cap "adc_comp_buffer_1/out" "adc_noise_decoup_cell2_1/pwell" 2.81922
+cap "adc_comp_buffer_0/out" "adc_comp_buffer_0/in" 0.986484
+cap "adc_comp_buffer_1/a_26_n216#" "adc_comp_buffer_0/a_26_n216#" 3.7369
+cap "adc_comp_buffer_0/out" "adc_comp_buffer_1/VDD" 38.551
+cap "adc_noise_decoup_cell2_0/nmoscap_bot" "adc_comp_buffer_1/in" 0.0525276
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_noise_decoup_cell2_1/pwell" 26.2008
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_1/in" 0.0347515
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_0/a_26_n216#" 3.33709
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_0/a_26_n216#" 2.91398
+cap "adc_comp_buffer_1/VDD" "adc_comp_buffer_0/a_26_n216#" 122.894
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_0/out" 1.56385
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_1/out" 0.196959
+cap "adc_comp_buffer_1/out" "adc_comp_buffer_1/VDD" 0.00646508
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_0/in" 1.25596
+cap "adc_noise_decoup_cell2_0/nmoscap_top" "adc_comp_buffer_1/VDD" 0.769665
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_0/nmoscap_top" 17.0337
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_noise_decoup_cell2_0/nmoscap_top" 3.03976
+cap "adc_comp_buffer_1/VDD" "adc_noise_decoup_cell2_1/pwell" 110.651
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_1/pwell" 0.0921259
+cap "adc_noise_decoup_cell2_1/pwell" "adc_comp_buffer_0/a_26_n216#" 4.17809
+cap "adc_noise_decoup_cell2_1/pwell" "adc_noise_decoup_cell2_1/nmoscap_bot" 43.3318
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_1/VDD" 1.62062
+cap "adc_comp_buffer_1/VDD" "adc_noise_decoup_cell2_1/nmoscap_bot" 302.074
+cap "adc_comp_buffer_0/in" "adc_noise_decoup_cell2_1/pwell" 1.09345
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_bot" 0.0383032
+cap "adc_noise_decoup_cell2_1/pwell" "adc_comp_buffer_0/out" 2.71397
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_bot" 392.827
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_bot" 478.672
+cap "adc_noise_decoup_cell2_1/pwell" "adc_noise_decoup_cell2_1/nmoscap_top" 243.229
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_noise_decoup_cell2_1/nmoscap_top" 3.63798e-12
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_noise_decoup_cell2_1/pwell" 102.556
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_1/pwell" 37.5892
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_comp_buffer_0/VDD" 4.69637
+cap "adc_noise_decoup_cell2_1/nmoscap_top" "adc_noise_decoup_cell2_1/nmoscap_bot" 126.598
+cap "adc_comp_buffer_0/VDD" "adc_noise_decoup_cell2_1/pwell" 6.12993
+cap "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_noise_decoup_cell2_1/pwell" 285.183
+cap "adc_comp_buffer_0/VDD" "adc_noise_decoup_cell2_1/nmoscap_bot" 11.1516
+merge "adc_noise_decoup_cell2_0/nmoscap_top" "op" -1638.57 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -128 0 0 0 0 0 0 0 0
+merge "adc_comp_buffer_0/VDD" "adc_comp_buffer_1/VDD" -5359.3 0 0 0 0 -584508 -6180 0 0 -91836 -4057 -31000 -1620 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -117264 -5925 -144142 -4685 -14720 -358 -23296 -620 -358144 -5724 0 0 0 0
+merge "adc_comp_buffer_1/VDD" "VPWR"
+merge "adc_noise_decoup_cell2_1/mimcap_bot" "adc_noise_decoup_cell2_1/pwell" -17280.5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30528 -7360 0 -4808 0 -3160 -117 -468 0 -4768 0 0 0 0
+merge "adc_noise_decoup_cell2_1/pwell" "li_4048_1156#"
+merge "li_4048_1156#" "adc_noise_decoup_cell2_1/mimcap_top"
+merge "adc_noise_decoup_cell2_1/mimcap_top" "adc_noise_decoup_cell2_1/nmoscap_bot"
+merge "adc_noise_decoup_cell2_1/nmoscap_bot" "adc_comp_buffer_0/VSS"
+merge "adc_comp_buffer_0/VSS" "li_4048_n2434#"
+merge "li_4048_n2434#" "adc_comp_buffer_1/VSS"
+merge "adc_comp_buffer_1/VSS" "adc_noise_decoup_cell2_0/mimcap_bot"
+merge "adc_noise_decoup_cell2_0/mimcap_bot" "adc_noise_decoup_cell2_0/mimcap_top"
+merge "adc_noise_decoup_cell2_0/mimcap_top" "adc_noise_decoup_cell2_0/nmoscap_bot"
+merge "adc_noise_decoup_cell2_0/nmoscap_bot" "adc_noise_decoup_cell2_0/pwell"
+merge "adc_noise_decoup_cell2_0/pwell" "VGND"
+merge "adc_comp_buffer_0/in" "bn" -152.895 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56 0 0 0 0 0 0 0 0 0 0
+merge "adc_comp_buffer_1/in" "bp" -96.9701 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56 0 0 0 0 0 0 0 0 0 0
+merge "adc_noise_decoup_cell2_1/nmoscap_top" "on" -1591.7 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -128 0 0 0 0 0 0 0 0

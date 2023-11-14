@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1699105170
+timestamp 1699972208
 << metal1 >>
 rect -1624 54698 -1504 54704
 rect -1624 46688 -1504 54578
@@ -789,11 +789,11 @@ rect 83987 -163145 84781 -160683
 rect 87243 -163145 87985 -160683
 rect 83987 -163833 87985 -163145
 use adc_bridge  adc_bridge_0
-timestamp 1699025947
+timestamp 1699972208
 transform 1 0 -14308 0 1 148
 box -1076 -4 11012 80000
 use adc_top  adc_top_0
-timestamp 1699025947
+timestamp 1699972208
 transform 1 0 0 0 1 0
 box -1076 -4 85624 80516
 << labels >>
