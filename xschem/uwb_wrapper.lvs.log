@@ -1,0 +1,81 @@
+Netgen 1.5.255 compiled on Mon Oct 30 08:56:34 PM CET 2023
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file /foss/designs/finallvs/sky130_adc_202311/xschem/uwb_wrapper.ext.spc
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8_hvt
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Reading netlist file /foss/designs/finallvs/sky130_adc_202311/xschem/uwb_wrapper.sch.spc
+
+Reading setup file /foss/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl
+
+Model sky130_fd_pr__res_generic_m5 pin end_a == end_b
+No property mult found for device sky130_fd_pr__res_generic_m5
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nf found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nf found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Model sky130_fd_pr__pfet_01v8_hvt pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8_hvt
+No property sa found for device sky130_fd_pr__pfet_01v8_hvt
+No property sb found for device sky130_fd_pr__pfet_01v8_hvt
+No property sd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nf found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrd found for device sky130_fd_pr__pfet_01v8_hvt
+No property nrs found for device sky130_fd_pr__pfet_01v8_hvt
+No property area found for device sky130_fd_pr__pfet_01v8_hvt
+No property perim found for device sky130_fd_pr__pfet_01v8_hvt
+No property topography found for device sky130_fd_pr__pfet_01v8_hvt
+No property value found for device sky130_fd_pr__diode_pw2nd_05v5
+No property mult found for device sky130_fd_pr__diode_pw2nd_05v5
+No property perim found for device sky130_fd_pr__diode_pw2nd_05v5
+No property area found for device sky130_fd_pr__cap_mim_m3_1
+No property value found for device sky130_fd_pr__cap_mim_m3_1
+No property mult found for device sky130_fd_pr__cap_mim_m3_1
+No property perim found for device sky130_fd_pr__cap_mim_m3_1
+No property mf found for device sky130_fd_pr__cap_mim_m3_1
+Comparison output logged to file /foss/designs/finallvs/sky130_adc_202311/xschem/uwb_wrapper.lvs.out
+Logging to file "/foss/designs/finallvs/sky130_adc_202311/xschem/uwb_wrapper.lvs.out" enabled
+
+Contents of circuit 1:  Circuit: 'uwb_wrapper'
+Circuit uwb_wrapper contains 10924 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances: 5639
+  Class: sky130_fd_pr__cap_mim_m3_1 instances: 560
+  Class: sky130_fd_pr__pfet_01v8_hvt instances: 4523
+  Class: sky130_fd_pr__pfet_01v8 instances:  42
+  Class: sky130_fd_pr__diode_pw2nd_05v5 instances: 154
+  Class: sky130_fd_pr__res_generic_m5 instances:   6
+Circuit contains 2045 nets.
+Contents of circuit 2:  Circuit: 'uwb_wrapper'
+Circuit uwb_wrapper contains 0 device instances.
+Circuit contains 0 nets.
+
+Circuit uwb_wrapper contains no devices.
+
+Final result: 
+Verify:  cell /foss/designs/finallvs/sky130_adc_202311/xschem/uwb_wrapper.sch.spc has no elements and/or nodes.  Not checked.
+Logging to file "/foss/designs/finallvs/sky130_adc_202311/xschem/uwb_wrapper.lvs.out" disabled
+LVS Done.

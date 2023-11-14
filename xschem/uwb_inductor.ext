@@ -1,0 +1,55 @@
+timestamp 1698153454
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__res_generic_m5_EGUVWD sky130_fd_pr__res_generic_m5_EGUVWD_1 1 0 3228 0 1 -1757
+use sky130_fd_pr__res_generic_m5_EGUVWD sky130_fd_pr__res_generic_m5_EGUVWD_0 1 0 -3228 0 1 -1757
+port "p2" 2 2728 -2114 3728 -2014 m5
+port "p1" 3 -3728 -2114 -2728 -2014 m5
+port "pm" 1 -500 -1600 500 -1500 m5
+node "p2" 0 287.741 2728 -2114 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 100000 2200 0 0
+node "p1" 0 287.741 -3728 -2114 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 100000 2200 0 0
+node "pm" 0 23486.2 -500 -1600 m5 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7455600 16910 107230533 218403 0 0
+node "li_n9750_8200#" 15 370010 -9750 8200 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 347625000 1391500 5375000 22500 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "p2" "pm" 252.443
+cap "li_n9750_8200#" "p1" 1.18653
+cap "li_n9750_8200#" "p2" 1.18653
+cap "li_n9750_8200#" "pm" 33844.4
+cap "p1" "pm" 252.443
+cap "li_n9750_8200#" "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_n200#" 3.2465
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_n257#" "li_n9750_8200#" 0.19907
+cap "li_n9750_8200#" "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_n200#" 1.62325
+cap "li_n9750_8200#" "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_200#" 0.133188
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_200#" "li_n9750_8200#" 0.520264
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_n257#" "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_200#" -246.889
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_n257#" "li_n9750_8200#" 0.101924
+cap "li_n9750_8200#" "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_n200#" 0.831105
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_200#" "li_n9750_8200#" 0.260132
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_n257#" "li_n9750_8200#" 0.39814
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_n257#" "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_200#" -5.55375
+cap "li_n9750_8200#" "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_n200#" 0.142846
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_n257#" "li_n9750_8200#" 0.0175182
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_200#" "li_n9750_8200#" 0.0228916
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_200#" "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_n257#" -30.798
+cap "li_n9750_8200#" "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_200#" 0.126944
+cap "li_n9750_8200#" "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_n257#" 0.0971462
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_n200#" "li_n9750_8200#" 0.792147
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_200#" "li_n9750_8200#" 0.520264
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_n200#" "li_n9750_8200#" 0.973951
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_200#" "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_n257#" -221.645
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_n200#" "li_n9750_8200#" 0.831105
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_200#" "li_n9750_8200#" 0.156079
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_200#" "li_n9750_8200#" 0.133188
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_n257#" "li_n9750_8200#" 0.39814
+cap "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_n200#" "li_n9750_8200#" 3.2465
+cap "li_n9750_8200#" "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_n257#" 0.119442
+cap "li_n9750_8200#" "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_n257#" 0.101924
+merge "sky130_fd_pr__res_generic_m5_EGUVWD_1/VSUBS" "sky130_fd_pr__res_generic_m5_EGUVWD_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__res_generic_m5_EGUVWD_0/VSUBS" "VSUBS"
+merge "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_n257#" "p1" -233.091 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2000 0 0
+merge "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_n257#" "p2" -233.091 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2000 0 0
+merge "sky130_fd_pr__res_generic_m5_EGUVWD_1/m5_n500_200#" "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_200#" -2983.12 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1701000 -17839 0 0
+merge "sky130_fd_pr__res_generic_m5_EGUVWD_0/m5_n500_200#" "pm"

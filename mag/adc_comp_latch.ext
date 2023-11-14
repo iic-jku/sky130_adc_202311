@@ -1,0 +1,685 @@
+timestamp 1515178157
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use adc_nor_latch adc_nor_latch_0 1 0 6123 0 1 12820
+use adc_nor adc_nor_0 1 0 6455 0 -1 12762
+use adc_inverter adc_inverter_2 1 0 2414 0 1 12236
+use adc_inverter adc_inverter_1 1 0 2690 0 1 12236
+use adc_comp_circuit adc_comp_circuit_0 1 0 3088 0 1 13378
+port "VDD" 7 7746 10000 8066 15596 m4
+port "VSS" 8 7356 10000 7676 15596 m4
+port "inn" 3 2237 13434 2271 13494 m3
+port "inp" 2 2237 13554 2271 13614 m3
+port "comp_trig" 4 7942 12833 8066 12893 m3
+port "latch_q" 6 7903 13065 8066 13125 m3
+port "clk" 1 2237 12362 2271 12422 m3
+port "latch_qn" 5 7903 13192 8066 13252 m3
+node "VDD" 1 1545.73 7746 10000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1790720 11832 0 0 0 0
+node "VSS" 1 1508.06 7356 10000 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1790720 11832 0 0 0 0
+node "inn" 2 583.028 2237 13434 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97720 3410 60528 1996 0 0 0 0
+node "inp" 2 671.894 2237 13554 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 97720 3410 60276 1988 0 0 0 0
+node "comp_trig" 1 431.6 7942 12833 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4756 288 71020 2476 0 0 0 0 0 0
+node "latch_q" 1 146.42 7903 13065 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4868 292 48400 1722 0 0 0 0 0 0
+node "m2_3708_12847#" 0 51.6061 3708 12847 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5986 310 0 0 0 0 0 0 0 0
+node "m2_3267_12845#" 0 50.8471 3267 12845 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5904 308 0 0 0 0 0 0 0 0
+node "m1_2430_12052#" 1 173.924 2430 12052 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 44866 1066 0 0 0 0 0 0 0 0 0 0
+node "clk" 0 185.02 2237 12362 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4221 260 5829 308 12688 538 0 0 0 0 0 0
+node "m1_6233_12510#" 4 334.288 6233 12510 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3664 256 26956 1794 5684 306 0 0 0 0 0 0
+node "m1_2756_12668#" 1 4.14055 2756 12668 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1014 182 0 0 0 0 0 0 0 0 0 0
+node "m1_6185_12694#" 2 107.465 6185 12694 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10612 814 0 0 0 0 0 0 0 0 0 0
+node "m1_6185_12982#" 3 223.784 6185 12982 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12316 858 15003 972 0 0 0 0 0 0 0 0
+node "latch_qn" 1 324.021 7903 13192 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6476 450 4144 260 41184 1490 0 0 0 0 0 0
+node "m1_2488_12772#" 2 336.393 2488 12772 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 65806 1926 0 0 0 0 0 0 0 0 0 0
+node "m1_6155_13386#" 0 184.23 6155 13386 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4640 276 4640 276 10604 470 0 0 0 0 0 0
+node "li_2764_12366#" 24 688.123 2764 12366 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2340 198 85594 3372 0 0 0 0 0 0 0 0 0 0
+node "li_2488_12366#" 20 68.8123 2488 12366 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2604 208 13932 664 0 0 0 0 0 0 0 0 0 0
+node "li_2752_12721#" 118 105.884 2752 12721 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19278 936 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_2476_12721#" 119 112.481 2476 12721 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19210 936 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_6517_12976#" 89 182.866 6517 12976 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 20196 856 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_5814_12056#" 2619 1431.46 5814 12056 nw 0 0 0 0 477152 3126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_2448_12652#" 9939 422.583 2448 12652 nw 0 0 0 0 140861 2660 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_4120_12966#" 1121 126.441 4120 12966 nw 0 0 0 0 42147 824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_3619_12966#" 2352 78.795 3619 12966 nw 0 0 0 0 26265 716 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_3046_12966#" 1524 121.635 3046 12966 nw 0 0 0 0 40545 828 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_6253_13313#" 7663 21.78 6253 13313 nw 0 0 0 0 7260 544 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_2476_12721#" "inp" 0.257416
+cap "w_4120_12966#" "inp" 3.66431
+cap "comp_trig" "latch_qn" 1.05804
+cap "inn" "clk" 13.877
+cap "m1_2430_12052#" "li_2488_12366#" 43.3184
+cap "li_2764_12366#" "li_2488_12366#" 39.8546
+cap "w_2448_12652#" "li_2752_12721#" 54.0119
+cap "inn" "m2_3267_12845#" 21.5902
+cap "m1_6185_12694#" "m1_6233_12510#" 49.4138
+cap "inp" "li_2488_12366#" 0.0123114
+cap "w_5814_12056#" "m1_6185_12982#" 7.88624
+cap "latch_qn" "VDD" 134.953
+cap "comp_trig" "m1_6185_12982#" 6.708
+cap "w_2448_12652#" "m1_2430_12052#" 2.98684
+cap "w_2448_12652#" "li_2764_12366#" 17.2184
+cap "w_5814_12056#" "VSS" 28.8214
+cap "m1_2756_12668#" "m1_2488_12772#" 24.3404
+cap "comp_trig" "VSS" 173.099
+cap "w_5814_12056#" "m1_6155_13386#" 3.41948
+cap "comp_trig" "latch_q" 231.337
+cap "w_3619_12966#" "m1_2488_12772#" 1.60549
+cap "w_6253_13313#" "m1_6185_12982#" 1.12
+cap "li_2488_12366#" "clk" 53.9698
+cap "VDD" "m1_6185_12982#" 1.31579
+cap "VSS" "w_6253_13313#" 0.283822
+cap "m1_6155_13386#" "w_6253_13313#" 2.7555
+cap "VSS" "VDD" 2858.83
+cap "m1_6155_13386#" "VDD" 0.210292
+cap "m1_2756_12668#" "li_2752_12721#" 7.98228
+cap "li_2476_12721#" "inn" 1.69819
+cap "latch_q" "VDD" 112.474
+cap "li_6517_12976#" "m1_6185_12982#" 6.05128
+cap "w_5814_12056#" "m1_6233_12510#" 12.8405
+cap "comp_trig" "m1_6233_12510#" 0.130255
+cap "w_2448_12652#" "clk" 1.60724
+cap "w_3619_12966#" "m2_3708_12847#" 0.680621
+cap "li_6517_12976#" "VSS" 2.32119
+cap "li_2764_12366#" "m1_2756_12668#" 11.534
+cap "w_2448_12652#" "m2_3267_12845#" 0.260328
+cap "w_6253_13313#" "m1_6233_12510#" 1.82596
+cap "inn" "li_2488_12366#" 0.61103
+cap "m2_3708_12847#" "m1_2488_12772#" 0.0879414
+cap "li_2752_12721#" "m1_2488_12772#" 43.4892
+cap "VDD" "m1_6233_12510#" 0.489358
+cap "li_2764_12366#" "w_3619_12966#" 1.24359
+cap "inp" "w_3619_12966#" 5.6267
+cap "li_6517_12976#" "m1_6233_12510#" 1.24865
+cap "li_2476_12721#" "li_2488_12366#" 9.22677
+cap "m1_2430_12052#" "m1_2488_12772#" 2.24625
+cap "w_2448_12652#" "inn" 8.63598
+cap "li_2764_12366#" "m1_2488_12772#" 6.51185
+cap "m1_2488_12772#" "w_3046_12966#" 9.0045
+cap "w_5814_12056#" "m1_6185_12694#" 4.88546
+cap "inp" "m1_2488_12772#" 2.9157
+cap "w_2448_12652#" "li_2476_12721#" 47.1305
+cap "m1_2430_12052#" "li_2752_12721#" 0.159297
+cap "li_2764_12366#" "m2_3708_12847#" 0.248973
+cap "VSS" "latch_qn" 136.222
+cap "li_2764_12366#" "li_2752_12721#" 9.07526
+cap "m1_6185_12694#" "VDD" 0.298928
+cap "latch_q" "latch_qn" 351.596
+cap "inp" "m2_3708_12847#" 21.4133
+cap "li_2752_12721#" "inp" 0.257601
+cap "w_2448_12652#" "li_2488_12366#" 15.2837
+cap "li_2764_12366#" "m1_2430_12052#" 62.0317
+cap "m1_2756_12668#" "inn" 0.0775275
+cap "m2_3267_12845#" "m1_2488_12772#" 0.749032
+cap "li_2764_12366#" "w_3046_12966#" 1.91972
+cap "VSS" "m1_6185_12982#" 4.0823
+cap "comp_trig" "w_5814_12056#" 4.74268
+cap "m1_2430_12052#" "inp" 0.0215495
+cap "m1_6155_13386#" "m1_6185_12982#" 3.95117
+cap "inn" "w_3619_12966#" 4.00703
+cap "li_2764_12366#" "inp" 2.77303
+cap "latch_qn" "m1_6233_12510#" 3.58339
+cap "VSS" "m1_6155_13386#" 1.38177
+cap "li_2476_12721#" "m1_2756_12668#" 0.588071
+cap "VSS" "latch_q" 129.818
+cap "m2_3267_12845#" "m2_3708_12847#" 8.35322
+cap "inn" "m1_2488_12772#" 27.4121
+cap "comp_trig" "VDD" 154.755
+cap "m1_2430_12052#" "clk" 3.29244
+cap "li_2764_12366#" "clk" 2.95534
+cap "m1_6185_12982#" "m1_6233_12510#" 190.65
+cap "w_5814_12056#" "li_6517_12976#" 10.0067
+cap "VSS" "m1_6233_12510#" 3.04636
+cap "li_2476_12721#" "m1_2488_12772#" 40.9459
+cap "inp" "clk" 0.128546
+cap "m1_6155_13386#" "m1_6233_12510#" 40.899
+cap "li_2764_12366#" "m2_3267_12845#" 0.248788
+cap "latch_q" "m1_6233_12510#" 3.75422
+cap "w_4120_12966#" "m1_2488_12772#" 1.04195
+cap "inn" "m2_3708_12847#" 0.0271364
+cap "inn" "li_2752_12721#" 1.6324
+cap "inp" "m2_3267_12845#" 0.176459
+cap "w_2448_12652#" "m1_2756_12668#" 8.29847
+cap "li_6517_12976#" "VDD" 0.272591
+cap "m1_2488_12772#" "li_2488_12366#" 24.8163
+cap "m1_2430_12052#" "inn" 1.22386
+cap "li_2476_12721#" "li_2752_12721#" 31.1945
+cap "li_2764_12366#" "inn" 4.5574
+cap "inn" "w_3046_12966#" 9.46494
+cap "m1_6185_12694#" "m1_6185_12982#" 105.814
+cap "inn" "inp" 1106.38
+cap "li_2476_12721#" "m1_2430_12052#" 0.413371
+cap "w_2448_12652#" "m1_2488_12772#" 24.4691
+cap "VSS" "m1_6185_12694#" 1.26152
+cap "m1_6185_12694#" "m1_6155_13386#" 0.150884
+cap "adc_inverter_2/VSS" "adc_inverter_2/VDD" 3.57893
+cap "adc_inverter_2/VSS" "adc_inverter_2/out" 3.5196
+cap "adc_inverter_2/VSS" "adc_comp_circuit_0/op" 0.0198129
+cap "adc_inverter_1/out" "adc_comp_circuit_0/op" 0.291886
+cap "adc_inverter_2/VSS" "adc_inverter_2/in" 4.46519
+cap "adc_inverter_2/VDD" "adc_comp_circuit_0/op" 0.205836
+cap "adc_inverter_2/out" "adc_comp_circuit_0/op" -0.103209
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_top" "adc_nor_0/VSS" -0.00876484
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_top" -9.09495e-13
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_top" "adc_nor_0/b" 0.20122
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_top" "adc_nor_0/q" 0.110455
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_top" "adc_nor_0/a" 0.220132
+cap "adc_nor_0/VDD" "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_top" 1.06885
+cap "adc_nor_0/VDD" "adc_nor_0/VSS" -715.217
+cap "adc_comp_circuit_0/op" "adc_comp_circuit_0/a_n28_n1170#" -1.13687e-13
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_inverter_2/VSS" 0.266113
+cap "adc_comp_circuit_0/on" "adc_comp_circuit_0/a_30_n1001#" 19.6379
+cap "adc_inverter_1/out" "adc_inverter_2/VSS" 177.322
+cap "adc_comp_circuit_0/on" "adc_inverter_1/out" 4.55385
+cap "adc_inverter_2/out" "adc_inverter_2/in" 90.7791
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_inverter_1/out" 2.42908
+cap "adc_inverter_2/VDD" "adc_inverter_2/out" 117.842
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" "adc_inverter_2/out" 0.0714286
+cap "adc_comp_circuit_0/on" "adc_inverter_2/in" 0.58445
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_inverter_2/out" 0.177766
+cap "adc_inverter_2/out" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/mimcap_bot" -7.22895
+cap "adc_inverter_2/VSS" "adc_inverter_2/in" 26.7052
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_inverter_2/in" 0.341937
+cap "adc_comp_circuit_0/on" "adc_inverter_2/VDD" 0.144458
+cap "adc_inverter_2/VDD" "adc_inverter_2/VSS" 59.1615
+cap "adc_inverter_1/out" "adc_inverter_2/in" -0.627638
+cap "adc_comp_circuit_0/op" "adc_inverter_2/out" 4.06646
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_inverter_2/VDD" 0.0945953
+cap "adc_comp_circuit_0/a_n28_n1170#" "adc_inverter_2/out" -6.72332
+cap "adc_inverter_2/VSS" "adc_comp_circuit_0/a_470_n1001#" 0.191742
+cap "adc_comp_circuit_0/on" "adc_comp_circuit_0/a_470_n1001#" 5.44181
+cap "adc_comp_circuit_0/on" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/mimcap_bot" -0.19872
+cap "adc_inverter_1/out" "adc_inverter_2/VDD" -16.6904
+cap "adc_comp_circuit_0/on" "adc_comp_circuit_0/op" -0.541449
+cap "adc_comp_circuit_0/op" "adc_inverter_2/VSS" -0.258454
+cap "adc_inverter_1/out" "adc_comp_circuit_0/a_470_n1001#" 0.411438
+cap "adc_comp_circuit_0/on" "adc_comp_circuit_0/a_n28_n1170#" 2.84217e-14
+cap "adc_comp_circuit_0/a_n28_n1170#" "adc_inverter_2/VSS" 1.13687e-13
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_comp_circuit_0/op" 0.00909096
+cap "adc_inverter_1/out" "adc_comp_circuit_0/op" 6.77314
+cap "adc_inverter_1/out" "adc_comp_circuit_0/a_n28_n1170#" 67.0378
+cap "adc_inverter_2/VDD" "adc_inverter_2/in" 18.0236
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_inverter_2/in" 0.182555
+cap "adc_inverter_2/VDD" "adc_comp_circuit_0/a_470_n1001#" -0.20541
+cap "adc_comp_circuit_0/op" "adc_inverter_2/in" 1.13407
+cap "adc_comp_circuit_0/a_n28_n1170#" "adc_inverter_2/in" 0.0213043
+cap "adc_inverter_2/VSS" "adc_inverter_2/out" 41.4389
+cap "adc_comp_circuit_0/op" "adc_inverter_2/VDD" 13.8739
+cap "adc_comp_circuit_0/on" "adc_inverter_2/out" 2.1557
+cap "adc_comp_circuit_0/a_n28_n1170#" "adc_inverter_2/VDD" 2.36446
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_inverter_2/out" 25.5762
+cap "adc_inverter_1/out" "adc_inverter_2/out" 111.163
+cap "adc_comp_circuit_0/on" "adc_inverter_2/VSS" -12.1861
+cap "adc_nor_0/VDD" "adc_inverter_2/out" 0.875282
+cap "adc_inverter_1/out" "adc_comp_circuit_0/on" -0.441882
+cap "adc_comp_circuit_0/on" "adc_inverter_2/out" -0.238506
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/r" 0.167446
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/VDD" 0.977804
+cap "adc_comp_circuit_0/on" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/mimcap_bot" -0.0633906
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/on" -1.40164
+cap "adc_inverter_1/out" "adc_comp_circuit_0/a_470_n1001#" -1.04802
+cap "adc_nor_latch_0/VSS" "adc_comp_circuit_0/bn" -5.68434e-14
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_inverter_2/out" 1.11784
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/bp" 0.0481321
+cap "adc_inverter_1/out" "adc_nor_latch_0/VSS" 22.6697
+cap "adc_nor_latch_0/VSS" "adc_inverter_2/out" -0.918761
+cap "adc_comp_circuit_0/op" "adc_nor_0/VDD" 3.72046
+cap "adc_inverter_2/out" "adc_comp_circuit_0/a_n28_n1170#" -7.10543e-15
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/bn" 1.77636e-15
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/VDD" -0.938981
+cap "adc_comp_circuit_0/bp" "adc_nor_0/VDD" 1.16204
+cap "adc_comp_circuit_0/op" "adc_comp_circuit_0/bp" 7.10543e-15
+cap "adc_nor_latch_0/VSS" "adc_comp_circuit_0/a_30_n1001#" -1.11022e-16
+cap "adc_inverter_1/out" "adc_inverter_2/out" 1.44906
+cap "adc_comp_circuit_0/op" "adc_comp_circuit_0/a_470_n1001#" 0.0238336
+cap "adc_comp_circuit_0/on" "adc_comp_circuit_0/a_470_n1001#" 13.8694
+cap "adc_inverter_1/out" "adc_nor_latch_0/VDD" 0.011285
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/s" 0.200806
+cap "adc_nor_latch_0/VDD" "adc_inverter_2/out" -0.220873
+cap "adc_inverter_1/out" "adc_comp_circuit_0/a_30_n1001#" -0.0231014
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_inverter_2/out" 0.441791
+cap "adc_nor_latch_0/VSS" "adc_nor_0/VDD" 3.47593
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/VSS" -0.367918
+cap "adc_comp_circuit_0/bp" "adc_nor_latch_0/s" 2.94349
+cap "adc_nor_latch_0/VSS" "adc_comp_circuit_0/on" -5.874
+cap "adc_comp_circuit_0/bp" "adc_nor_latch_0/VSS" -1.13687e-13
+cap "adc_comp_circuit_0/on" "adc_comp_circuit_0/a_n28_n1170#" -5.68434e-14
+cap "adc_inverter_1/out" "adc_comp_circuit_0/op" 0.562327
+cap "adc_nor_latch_0/VSS" "adc_comp_circuit_0/a_470_n1001#" -8.88178e-16
+cap "adc_nor_latch_0/s" "adc_comp_circuit_0/bp" 11.0257
+cap "adc_comp_circuit_0/on" "adc_nor_0/a_120_106#" 0.261322
+cap "adc_nor_latch_0/VSS" "adc_nor_0/q" 0.0535746
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/a_288_530#" 0.0285709
+cap "adc_comp_circuit_0/on" "adc_nor_latch_0/r" 0.346129
+cap "adc_nor_latch_0/q" "adc_nor_latch_0/VSS" 0.302883
+cap "adc_comp_circuit_0/op" "adc_nor_0/q" 0.647481
+cap "adc_nor_latch_0/s" "adc_nor_0/a_120_106#" 1.48215
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/r" 3.10787
+cap "adc_nor_latch_0/s" "adc_nor_latch_0/r" 12.5833
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/VSS" 25.6918
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/op" 6.32291
+cap "adc_nor_0/q" "adc_comp_circuit_0/adc_comp_buffer_1/a_26_n216#" 0.162443
+cap "adc_comp_circuit_0/bp" "adc_nor_latch_0/VSS" -0.0137896
+cap "adc_comp_circuit_0/on" "adc_nor_latch_0/s" 1.06966
+cap "adc_nor_latch_0/s" "adc_comp_circuit_0/a_1611_n1292#" 0.102366
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/s" 0.174723
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/adc_comp_buffer_1/a_26_n216#" 19.4861
+cap "adc_comp_circuit_0/op" "adc_nor_0/a_120_106#" 0.622874
+cap "adc_nor_latch_0/r" "adc_nor_0/a_312_106#" 0.218887
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/qn" 0.0203584
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/VSS" 3.07312
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/op" 3.42251
+cap "adc_comp_circuit_0/on" "adc_nor_0/a_312_106#" 0.21416
+cap "adc_comp_circuit_0/adc_comp_buffer_1/a_26_n216#" "adc_nor_0/a_120_106#" 0.155046
+cap "adc_nor_latch_0/s" "adc_nor_0/a_312_106#" 0.154672
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/q" 0.122167
+cap "adc_nor_latch_0/s" "adc_nor_latch_0/VSS" 38.5154
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/VSS" -0.0367296
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/adc_comp_buffer_1/a_26_n216#" 0.127558
+cap "adc_nor_latch_0/qn" "adc_nor_latch_0/r" 1.82672
+cap "adc_nor_latch_0/s" "adc_comp_circuit_0/op" 7.75909
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_comp_circuit_0/op" 9.09495e-13
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/bp" 1.50056
+cap "adc_nor_latch_0/r" "adc_nor_0/q" 12.4535
+cap "adc_comp_circuit_0/bn" "adc_nor_latch_0/s" 5.74609
+cap "adc_nor_latch_0/s" "adc_comp_circuit_0/adc_comp_buffer_1/a_26_n216#" 10.6002
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/qn" 0.803506
+cap "adc_comp_circuit_0/on" "adc_nor_0/q" 0.217141
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/r" 10.9105
+cap "adc_comp_circuit_0/op" "adc_nor_0/a_312_106#" 0.48236
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/VSS" -0.0898127
+cap "adc_nor_latch_0/s" "adc_nor_0/q" 6.91392
+cap "adc_comp_circuit_0/on" "adc_nor_latch_0/VDD" 0.707601
+cap "adc_comp_circuit_0/adc_comp_buffer_1/a_26_n216#" "adc_nor_0/a_312_106#" 0.0822383
+cap "adc_comp_circuit_0/bn" "adc_nor_latch_0/VSS" -2.84217e-14
+cap "adc_nor_latch_0/VSS" "adc_comp_circuit_0/adc_comp_buffer_1/a_26_n216#" -0.772582
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/VDD" 4.47624
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/s" 28.2089
+cap "adc_nor_latch_0/qn" "adc_nor_latch_0/VSS" 0.139549
+cap "adc_nor_latch_0/r" "adc_nor_0/a_120_106#" 1.0032
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/qn" 0.273922
+cap "adc_nor_0/q" "adc_nor_0/a_120_106#" -7.10543e-15
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/adc_comp_buffer_1/in" 0.225889
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_top" "adc_nor_latch_0/s" 0.455873
+cap "adc_nor_0/q" "adc_nor_latch_0/VSS" 14.7603
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_top" 0.309733
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/VDD" -2.55487
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/VDD" 19.2532
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" "adc_nor_latch_0/s" 0.00816243
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/qn" 0.73046
+cap "adc_nor_latch_0/VDD" "adc_nor_0/a_120_106#" 6.77069
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" "adc_nor_latch_0/r" 0.00562173
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/q" 0.209574
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/s" 3.94193
+cap "adc_nor_latch_0/a_806_530#" "adc_nor_latch_0/VSS" 0.0531506
+cap "adc_nor_latch_0/qn" "adc_nor_latch_0/VSS" 7.4916
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/VSS" -707.667
+cap "adc_comp_circuit_0/adc_comp_buffer_1/in" "adc_nor_latch_0/VSS" -0.0295033
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_0/a_120_106#" 0.663936
+cap "adc_nor_latch_0/s" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" 0.00805946
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/q" 0.109569
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/adc_comp_buffer_1/a_26_n216#" 3.42944
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/VSS" -0.255131
+cap "adc_nor_latch_0/a_480_530#" "adc_nor_latch_0/VSS" 0.0721034
+cap "adc_nor_0/a_120_106#" "adc_nor_latch_0/VSS" 2.48957
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" 0.0940329
+cap "adc_nor_latch_0/q" "adc_nor_latch_0/VSS" 1.96306
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_top" 0.127384
+cap "adc_nor_latch_0/s" "adc_nor_0/q" 7.1259
+cap "adc_nor_latch_0/r" "adc_nor_0/q" 12.5352
+cap "adc_comp_circuit_0/adc_comp_buffer_1/a_26_n216#" "adc_nor_latch_0/VSS" -0.836829
+cap "adc_comp_circuit_0/adc_comp_buffer_0/in" "adc_nor_latch_0/s" 0.0394872
+cap "adc_comp_circuit_0/adc_comp_buffer_0/in" "adc_nor_latch_0/r" 0.0146129
+cap "adc_nor_latch_0/VDD" "adc_nor_0/a_312_106#" 11.9462
+cap "adc_nor_latch_0/s" "adc_nor_latch_0/qn" 0.68171
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/r" 90.5385
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/s" 22.0362
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/qn" 0.791947
+cap "adc_comp_circuit_0/adc_comp_buffer_1/in" "adc_nor_latch_0/s" 0.195311
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_0/a_312_106#" 0.0220914
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/adc_comp_buffer_1/in" 0.0058055
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/s" 2.35394
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/s" 0.384237
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/r" 1.34607
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/r" 0.0943331
+cap "adc_nor_0/a_312_106#" "adc_nor_latch_0/VSS" 1.81059
+cap "adc_nor_latch_0/r" "adc_nor_0/a_120_106#" -7.10543e-15
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/a_480_530#" 0.0435728
+cap "adc_nor_latch_0/q" "adc_nor_latch_0/s" 0.350527
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/q" 0.343653
+cap "adc_nor_latch_0/s" "adc_nor_latch_0/VSS" 24.172
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/VSS" 18.3629
+cap "adc_nor_latch_0/VDD" "adc_nor_0/q" 84.9112
+cap "adc_nor_latch_0/s" "adc_comp_circuit_0/adc_comp_buffer_1/a_26_n216#" 1.11506
+cap "adc_nor_latch_0/a_288_530#" "adc_nor_latch_0/VSS" 0.0435325
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/adc_comp_buffer_0/in" 0.128297
+cap "adc_nor_latch_0/s" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" 0.0619965
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_0/q" 10.1137
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" 0.0242513
+cap "adc_nor_latch_0/VDD" "adc_nor_0/q" 15.2118
+cap "adc_inverter_2/VDD" "adc_inverter_2/VSS" -36.0397
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_comp_circuit_0/op" 42.017
+cap "adc_inverter_1/out" "adc_comp_circuit_0/op" -0.00807312
+cap "adc_comp_circuit_0/on" "adc_comp_circuit_0/a_30_n1001#" 36.7252
+cap "adc_comp_circuit_0/bn" "adc_comp_circuit_0/a_470_n1001#" 0.469936
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_comp_circuit_0/bp" 0.0121849
+cap "adc_inverter_2/VDD" "adc_inverter_2/in" 0.282995
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_inverter_2/VSS" 339.832
+cap "adc_comp_circuit_0/a_1090_n348#" "adc_comp_circuit_0/a_470_n1001#" 1.29253
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_comp_circuit_0/a_n28_n1170#" 8.97256
+cap "adc_inverter_2/VSS" "adc_comp_circuit_0/op" -9.24445
+cap "adc_inverter_2/VDD" "adc_comp_circuit_0/a_470_n1001#" 32.2863
+cap "adc_comp_circuit_0/on" "adc_inverter_2/VSS" -15.0382
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_inverter_2/out" 27.9898
+cap "adc_comp_circuit_0/a_n28_n1170#" "adc_inverter_2/VSS" -4.03199
+cap "adc_inverter_2/VDD" "adc_comp_circuit_0/op" 7.40611
+cap "adc_inverter_2/VDD" "adc_comp_circuit_0/adc_noise_decoup_cell2_0/mimcap_bot" 1.06305e-17
+cap "adc_inverter_2/VDD" "adc_comp_circuit_0/bp" 0.00520801
+cap "adc_comp_circuit_0/on" "adc_inverter_2/VDD" 0.155365
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_comp_circuit_0/op" 0.130265
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_comp_circuit_0/bp" 0.278284
+cap "adc_inverter_2/out" "adc_inverter_2/VSS" -5.68818
+cap "adc_inverter_1/out" "adc_comp_circuit_0/a_30_n1001#" 23.2599
+cap "adc_comp_circuit_0/on" "adc_comp_circuit_0/a_470_n1001#" 20.5019
+cap "adc_inverter_2/VDD" "adc_comp_circuit_0/a_n28_n1170#" 0.173887
+cap "adc_comp_circuit_0/bn" "adc_comp_circuit_0/a_30_n1001#" 0.0234428
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_inverter_2/VSS" 54.1283
+cap "adc_inverter_2/VDD" "adc_inverter_2/out" -2.5061
+cap "adc_inverter_1/out" "adc_inverter_2/VSS" -4.08801
+cap "adc_comp_circuit_0/a_1090_n348#" "adc_comp_circuit_0/a_30_n1001#" 0.0564293
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_inverter_2/in" 1.43176
+cap "adc_inverter_2/VDD" "adc_comp_circuit_0/a_30_n1001#" 133.755
+cap "adc_inverter_2/VDD" "adc_inverter_1/out" 17.385
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_comp_circuit_0/a_470_n1001#" -8.44941
+cap "adc_inverter_1/out" "adc_comp_circuit_0/a_470_n1001#" 2.07595
+cap "adc_inverter_2/in" "adc_inverter_2/VSS" 1.20254
+cap "adc_comp_circuit_0/on" "adc_inverter_2/out" 0.0714286
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_comp_circuit_0/a_1090_n348#" 9.84383
+cap "adc_nor_latch_0/q" "adc_comp_circuit_0/on" 0.376418
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_nor_latch_0/VSS" 32.5806
+cap "adc_comp_circuit_0/a_n28_n1170#" "adc_comp_circuit_0/a_30_n1001#" 0.0208327
+cap "adc_nor_latch_0/s" "adc_nor_latch_0/VSS" 0.307007
+cap "adc_comp_circuit_0/op" "adc_comp_circuit_0/a_30_n1001#" 0.0173893
+cap "adc_nor_latch_0/qn" "adc_comp_circuit_0/on" 0.146421
+cap "adc_comp_circuit_0/on" "adc_nor_0/q" 0.00578359
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_inverter_2/out" 0.441791
+cap "adc_comp_circuit_0/bp" "adc_comp_circuit_0/on" 2.84217e-14
+cap "adc_nor_latch_0/VSS" "adc_inverter_1/out" -0.932164
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/a_1090_n348#" 0.0167149
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/VDD" -2.5124
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/VSS" 4.44089e-16
+cap "adc_comp_circuit_0/on" "adc_comp_circuit_0/a_1090_n348#" 5.68434e-14
+cap "adc_nor_latch_0/VSS" "adc_comp_circuit_0/on" -6.96173
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/on" 0.530402
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_comp_circuit_0/bn" 0.162447
+cap "adc_nor_latch_0/s" "adc_nor_latch_0/VSS" 2.01582
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_inverter_1/out" 12.3512
+cap "adc_comp_circuit_0/a_n28_n1170#" "adc_nor_latch_0/VSS" -0.343526
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_nor_latch_0/VDD" 51.6726
+cap "adc_nor_latch_0/a_288_530#" "adc_nor_latch_0/VSS" 0.163213
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/VSS" -0.0194307
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_comp_circuit_0/on" 106.237
+cap "adc_nor_latch_0/s" "adc_comp_circuit_0/on" 0.318274
+cap "adc_comp_circuit_0/a_n28_n1170#" "adc_comp_circuit_0/a_470_n1001#" 0.901019
+cap "adc_nor_latch_0/VDD" "adc_inverter_1/out" 0.419649
+cap "adc_comp_circuit_0/a_1877_n348#" "adc_nor_latch_0/VSS" 2.84217e-14
+cap "adc_comp_circuit_0/op" "adc_comp_circuit_0/a_470_n1001#" 4.45229
+cap "adc_comp_circuit_0/on" "adc_inverter_1/out" -1.6335
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/on" -5.25345
+cap "adc_nor_latch_0/VSS" "adc_comp_circuit_0/bn" -2.84217e-14
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_inverter_2/out" 1.13015
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_comp_circuit_0/a_1090_n348#" 0.0372346
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_comp_circuit_0/on" 4.44089e-16
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_nor_latch_0/VSS" 4.33107
+cap "adc_nor_latch_0/q" "adc_nor_latch_0/VSS" 0.337042
+cap "adc_nor_latch_0/s" "adc_comp_circuit_0/on" 0.553394
+cap "adc_nor_latch_0/a_288_530#" "adc_comp_circuit_0/on" 0.223326
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_comp_circuit_0/bn" 2.93885
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_comp_circuit_0/a_470_n1001#" -9.07945
+cap "adc_comp_circuit_0/op" "adc_comp_circuit_0/on" -1.12384
+cap "adc_inverter_2/out" "adc_nor_latch_0/VDD" -0.00918698
+cap "adc_nor_latch_0/qn" "adc_nor_latch_0/VSS" 0.0572402
+cap "adc_comp_circuit_0/a_1877_n348#" "adc_nor_latch_0/VDD" 5.68434e-14
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/bn" -2.84217e-14
+cap "adc_nor_latch_0/VSS" "adc_comp_circuit_0/a_1090_n348#" -1.42109e-14
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_inverter_1/out" 1.17392
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_nor_latch_0/VDD" 14.5838
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/VSS" 2.10806
+cap "adc_comp_circuit_0/bp" "adc_comp_circuit_0/a_470_n1001#" 2.32047
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_comp_circuit_0/on" 2.60611
+cap "adc_nor_latch_0/q" "adc_nor_latch_0/qn" 1.77636e-15
+cap "adc_comp_circuit_0/on" "adc_nor_latch_0/q" 0.191979
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/q" 3.59654
+cap "adc_comp_circuit_0/a_1090_n348#" "adc_nor_latch_0/r" 0.111935
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/bn" 2.84217e-14
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/qn" 10.3254
+cap "adc_comp_circuit_0/on" "adc_nor_0/q" 0.800441
+cap "adc_comp_circuit_0/on" "adc_nor_latch_0/VSS" -0.227516
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/VSS" -0.128732
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/r" 96.615
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/a_1877_n348#" 1.70359
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/a_288_530#" 0.72098
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/op" 0.314097
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/qn" 0.609972
+cap "adc_comp_circuit_0/bp" "adc_nor_latch_0/r" 0.885
+cap "adc_comp_circuit_0/a_1090_n348#" "adc_nor_latch_0/s" 0.415664
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/q" 16.9321
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/a_998_530#" 0.0392448
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/a_806_530#" 0.00582109
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/s" 44.8085
+cap "adc_nor_latch_0/s" "adc_comp_circuit_0/a_1877_n348#" 4.62685
+cap "adc_nor_latch_0/qn" "adc_nor_latch_0/r" 35.1399
+cap "adc_comp_circuit_0/on" "adc_nor_latch_0/r" 5.38937
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/r" 1.48672
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/q" 7.4745
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/qn" 0.0128291
+cap "adc_comp_circuit_0/bp" "adc_nor_latch_0/s" 5.37366
+cap "adc_nor_latch_0/VSS" "adc_nor_0/q" 1.31216
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/a_288_530#" 0.570308
+cap "adc_comp_circuit_0/bn" "adc_nor_latch_0/q" 0.152279
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/VSS" 4.81597
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/a_806_530#" 0.132562
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/a_480_530#" 0.0916128
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/a_288_530#" 0.0379791
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/a_806_530#" 0.00346368
+cap "adc_nor_latch_0/s" "adc_nor_latch_0/qn" 28.907
+cap "adc_comp_circuit_0/bn" "adc_nor_latch_0/VSS" -1.53541
+cap "adc_nor_latch_0/q" "adc_nor_latch_0/r" 36.8364
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/qn" 0.803506
+cap "adc_comp_circuit_0/on" "adc_nor_latch_0/s" 4.58176
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/s" 0.785181
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/q" 0.00585244
+cap "adc_nor_latch_0/r" "adc_nor_0/q" 6.22193
+cap "adc_comp_circuit_0/bn" "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" 5.68434e-14
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/r" 196.527
+cap "adc_comp_circuit_0/op" "adc_nor_0/q" 2.41217
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/VSS" -0.653564
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/a_1877_n348#" -2.27374e-13
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/a_288_530#" 3.54709
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/bp" 2.84217e-14
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/r" 8.6395
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/a_288_530#" 0.00820689
+cap "adc_nor_latch_0/q" "adc_nor_latch_0/s" 15.9742
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/q" 0.0282092
+cap "adc_comp_circuit_0/bn" "adc_nor_latch_0/r" 4.51008
+cap "adc_comp_circuit_0/bn" "adc_comp_circuit_0/op" 2.84217e-14
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/s" 168.996
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/a_998_530#" 0.00385496
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/qn" 1.79016
+cap "adc_nor_latch_0/s" "adc_nor_latch_0/a_288_530#" 8.88178e-16
+cap "adc_nor_latch_0/qn" "adc_comp_circuit_0/a_1877_n348#" 0.0387606
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/on" 1.1678
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/r" 2.5659
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/s" 15.7238
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" 2.13358
+cap "adc_comp_circuit_0/bn" "adc_nor_latch_0/s" 4.61189
+cap "adc_comp_circuit_0/a_1090_n348#" "adc_nor_latch_0/q" 0.000460601
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/a_998_530#" 0.0876876
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/a_806_530#" 0.0516975
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/a_480_530#" 0.0154393
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/q" 26.5673
+cap "adc_nor_latch_0/q" "adc_comp_circuit_0/a_1877_n348#" 0.174051
+cap "adc_nor_latch_0/s" "adc_nor_latch_0/r" 25.9038
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/r" 0.00422338
+cap "adc_comp_circuit_0/on" "adc_nor_latch_0/qn" 1.23396
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/qn" 6.82422
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/s" 9.45564
+cap "adc_comp_circuit_0/on" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" -9.09495e-13
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/VSS" -17.0909
+cap "adc_nor_latch_0/VSS" "adc_comp_circuit_0/a_1877_n348#" 2.03077
+cap "adc_comp_circuit_0/bp" "adc_nor_latch_0/VSS" -0.0795773
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/a_288_530#" 2.32297
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/a_480_530#" 0.478738
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" 2.26843
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/a_480_530#" 0.00570238
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/q" 0.454902
+cap "adc_comp_circuit_0/adc_comp_buffer_0/in" "adc_nor_latch_0/s" 0.0650069
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/r" 153.488
+cap "adc_nor_latch_0/qn" "adc_comp_circuit_0/adc_comp_buffer_1/in" 0.113589
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/VSS" -3.55046
+cap "adc_comp_circuit_0/op" "adc_nor_0/q" 2.03218
+cap "adc_nor_0/a_120_106#" "adc_nor_latch_0/q" 0.10747
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/a_806_530#" 1.43582
+cap "adc_nor_latch_0/qn" "adc_nor_latch_0/a_288_530#" -1.42109e-14
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/VSS" -0.943421
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" "adc_nor_latch_0/q" 0.169656
+cap "adc_nor_latch_0/a_998_530#" "adc_nor_latch_0/VSS" 2.0091
+cap "adc_nor_0/q" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" 0.0738498
+cap "adc_comp_circuit_0/op" "adc_nor_latch_0/VSS" -0.527738
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/q" 33.5748
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/qn" 0.750549
+cap "adc_nor_latch_0/qn" "adc_nor_latch_0/s" 18.6544
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/q" 12.6763
+cap "adc_nor_0/a_120_106#" "adc_nor_latch_0/VSS" 0.498537
+cap "adc_nor_latch_0/VDD" "adc_nor_0/q" 68.0814
+cap "adc_nor_latch_0/r" "adc_nor_0/q" 8.37269
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/s" 0.0773561
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/a_288_530#" 1.1561
+cap "adc_nor_latch_0/qn" "adc_comp_circuit_0/bn" 0.0901772
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" "adc_nor_latch_0/VSS" -0.0437991
+cap "adc_nor_latch_0/qn" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" 26.2736
+cap "adc_nor_latch_0/a_480_530#" "adc_nor_latch_0/VSS" 2.02984
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/s" 21.6388
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/VSS" -797.305
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/VSS" 217.691
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/adc_comp_buffer_0/in" 0.0115365
+cap "adc_nor_latch_0/qn" "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" 0.682165
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/a_806_530#" 6.09789
+cap "adc_comp_circuit_0/adc_comp_buffer_0/a_26_n216#" "adc_nor_latch_0/s" 1.7276
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/adc_comp_buffer_1/in" 0.00495112
+cap "adc_nor_latch_0/qn" "adc_comp_circuit_0/op" 0.166697
+cap "adc_nor_0/q" "adc_nor_latch_0/q" 45.5865
+cap "adc_nor_0/a_120_106#" "adc_nor_latch_0/s" 1.0405
+cap "adc_nor_latch_0/qn" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" 0.128696
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/a_288_530#" 3.91531
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/a_288_530#" 4.44089e-16
+cap "adc_nor_latch_0/q" "adc_nor_latch_0/VSS" 378.5
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" "adc_nor_latch_0/s" 1.92081
+cap "adc_comp_circuit_0/adc_comp_buffer_0/in" "adc_nor_latch_0/q" 0.123918
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/qn" 98.7177
+cap "adc_nor_0/q" "adc_nor_latch_0/VSS" 331.297
+cap "adc_nor_latch_0/qn" "adc_nor_latch_0/r" 25.3236
+cap "adc_nor_0/q" "adc_comp_circuit_0/adc_comp_buffer_0/in" 0.0780178
+cap "adc_nor_latch_0/a_806_530#" "adc_nor_latch_0/q" 7.10543e-15
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/s" 82.7268
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/r" 0.00479352
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/s" 8.16556
+cap "adc_nor_0/a_312_106#" "adc_nor_latch_0/VSS" 0.498537
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/a_480_530#" 1.87708
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/bn" 0.011942
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" 6.00316
+cap "adc_comp_circuit_0/adc_comp_buffer_0/in" "adc_nor_latch_0/VSS" -0.111793
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" 8.94174
+cap "adc_nor_latch_0/a_806_530#" "adc_nor_latch_0/VSS" 2.00611
+cap "adc_nor_latch_0/qn" "adc_nor_latch_0/q" 11.4743
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/a_998_530#" 6.09789
+cap "adc_nor_latch_0/qn" "adc_nor_0/q" 61.2692
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/q" 0.161619
+cap "adc_nor_latch_0/q" "adc_nor_latch_0/s" 14.8744
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/op" 0.0258183
+cap "adc_nor_latch_0/qn" "adc_comp_circuit_0/a_1877_n348#" 0.446232
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_0/q" 6.33881
+cap "adc_nor_0/q" "adc_nor_latch_0/s" 44.2402
+cap "adc_nor_latch_0/a_288_530#" "adc_nor_latch_0/VSS" 1.36484
+cap "adc_comp_circuit_0/a_1877_n348#" "adc_nor_latch_0/s" 0.137385
+cap "adc_nor_latch_0/a_480_530#" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" 0.0120133
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/q" 14.8648
+cap "adc_nor_latch_0/qn" "adc_nor_latch_0/VSS" 251.046
+cap "adc_comp_circuit_0/bn" "adc_nor_0/q" 0.00203411
+cap "adc_nor_latch_0/VDD" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" 0.6909
+cap "adc_nor_0/a_312_106#" "adc_nor_latch_0/s" 1.0405
+cap "adc_nor_latch_0/r" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_top" 0.343682
+cap "adc_nor_latch_0/qn" "adc_comp_circuit_0/adc_comp_buffer_0/in" 0.282645
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/a_480_530#" 6.09789
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_nor_latch_0/VSS" 0.0635423
+cap "adc_nor_latch_0/r" "adc_nor_latch_0/a_480_530#" 0.0632505
+cap "adc_nor_latch_0/s" "adc_nor_latch_0/VSS" 238.826
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/qn" 39.8441
+cap "adc_nor_latch_0/VDD" "adc_nor_latch_0/q" 2.18431
+cap "adc_nor_latch_0/VDD" "adc_nor_0/q" 10.987
+cap "adc_comp_circuit_0/a_30_n1001#" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" 0.745044
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_inverter_2/VDD" -3.01012
+cap "adc_comp_circuit_0/a_470_n1001#" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" 8.98417
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/q" 1.11149
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/VDD" 0.528827
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/a_998_530#" 0.31811
+cap "adc_nor_latch_0/VSS" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" -1.32709
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/s" 0.0452107
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/a_806_530#" 0.061549
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/qn" 8.21984
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/r" 11.6502
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/q" 1.75687
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/VDD" -711.93
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/qn" 0.0293888
+cap "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_latch_0/r" 1.28686
+cap "adc_nor_latch_0/VSS" "adc_nor_latch_0/a_998_530#" 0.235479
+merge "adc_nor_latch_0/VSS" "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" -3733.42 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45628 -2488 -9290 -1426 0 0 0 0 -1790720 -11832 0 0 0 0
+merge "adc_comp_circuit_0/adc_noise_decoup_cell2_1/nmoscap_bot" "adc_nor_0/VSS"
+merge "adc_nor_0/VSS" "VSS"
+merge "VSS" "li_6517_12976#"
+merge "li_6517_12976#" "adc_comp_circuit_0/VGND"
+merge "adc_comp_circuit_0/VGND" "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot"
+merge "adc_comp_circuit_0/adc_noise_decoup_cell2_0/nmoscap_bot" "adc_inverter_1/VSS"
+merge "adc_inverter_1/VSS" "adc_inverter_2/VSS"
+merge "adc_inverter_2/VSS" "VSUBS"
+merge "VSUBS" "m1_2430_12052#"
+merge "adc_comp_circuit_0/adc_comp_buffer_0/VDD" "adc_nor_latch_0/VDD" -5349.21 0 0 0 0 -527705 -13668 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -72820 -4436 -22536 -1068 0 0 0 0 -1790720 -11832 0 0 0 0
+merge "adc_nor_latch_0/VDD" "w_6253_13313#"
+merge "w_6253_13313#" "adc_comp_circuit_0/VPWR"
+merge "adc_comp_circuit_0/VPWR" "VDD"
+merge "VDD" "adc_comp_circuit_0/adc_comp_buffer_1/VDD"
+merge "adc_comp_circuit_0/adc_comp_buffer_1/VDD" "adc_nor_0/VDD"
+merge "adc_nor_0/VDD" "w_5814_12056#"
+merge "w_5814_12056#" "w_4120_12966#"
+merge "w_4120_12966#" "w_3619_12966#"
+merge "w_3619_12966#" "w_3046_12966#"
+merge "w_3046_12966#" "adc_inverter_1/VDD"
+merge "adc_inverter_1/VDD" "li_2752_12721#"
+merge "li_2752_12721#" "adc_inverter_2/VDD"
+merge "adc_inverter_2/VDD" "m1_2488_12772#"
+merge "m1_2488_12772#" "li_2476_12721#"
+merge "li_2476_12721#" "w_2448_12652#"
+merge "adc_nor_latch_0/q" "latch_q" -311.575 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -28 -60 0 0 0 0 0 0 0 0
+merge "adc_comp_circuit_0/adc_comp_buffer_0/out" "adc_nor_latch_0/r" -695.086 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -540 -208 0 0 0 -120 0 0 0 0 0 0
+merge "adc_nor_latch_0/r" "m1_6155_13386#"
+merge "m1_6155_13386#" "adc_nor_0/a"
+merge "adc_nor_0/a" "m1_6185_12982#"
+merge "adc_nor_latch_0/s" "adc_comp_circuit_0/adc_comp_buffer_1/out" -693.786 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -168 0 0 0 -120 0 0 0 0 0 0
+merge "adc_comp_circuit_0/adc_comp_buffer_1/out" "m1_6233_12510#"
+merge "m1_6233_12510#" "adc_nor_0/b"
+merge "adc_nor_0/b" "m1_6185_12694#"
+merge "adc_comp_circuit_0/a_470_n1001#" "inp" -549.113 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5986 -310 -5400 -294 0 0 0 0 0 0
+merge "inp" "m2_3708_12847#"
+merge "adc_inverter_2/in" "clk" -169.335 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3082 -226 0 0 0 0 0 0 0 0 0 0
+merge "adc_nor_latch_0/qn" "latch_qn" -438.537 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56 0 0 0 0 0 0 0 0 0 0
+merge "adc_nor_0/q" "comp_trig" -511.186 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -644 -102 0 0 0 0 0 0 0 0
+merge "adc_comp_circuit_0/a_1611_n1292#" "adc_inverter_1/in" -557.372 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2604 -208 -8121 -564 0 0 0 0 0 0 0 0 0 0
+merge "adc_inverter_1/in" "adc_inverter_2/out"
+merge "adc_inverter_2/out" "li_2488_12366#"
+merge "adc_comp_circuit_0/a_12_n446#" "adc_inverter_1/out" -810.812 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2340 -198 -59496 -2456 0 0 0 0 0 0 0 0 0 0
+merge "adc_inverter_1/out" "li_2764_12366#"
+merge "li_2764_12366#" "m1_2756_12668#"
+merge "adc_comp_circuit_0/a_30_n1001#" "inn" -386.16 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5904 -308 -5472 -296 0 0 0 0 0 0
+merge "inn" "m2_3267_12845#"
