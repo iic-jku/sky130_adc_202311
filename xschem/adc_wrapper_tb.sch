@@ -319,7 +319,7 @@ C {devices/vsource.sym} 760 -350 0 0 {name=V_IN_DIF1 value="pwl 0 0 \{boot\} \{v
 C {devices/vsource.sym} 880 -350 2 1 {name=V_IN_DIF2 value="pwl 0 0 \{boot\} \{vdiff/2\}"}
 C {devices/lab_wire.sym} 760 -400 0 1 {name=l16 sig_type=std_logic lab=inp_ana}
 C {devices/lab_wire.sym} 880 -400 0 0 {name=l18 sig_type=std_logic lab=inn_ana}
-C {devices/vsource.sym} 160 -490 0 0 {name=V31 value="pwl 0 0 410n 0 411n 1.8 600n 1.8 601n 0 5500n 0 5501n 1.8 5800n 1.8 5801n 0"}
+C {devices/vsource.sym} 160 -490 0 0 {name=V31 value="pwl 0 0 4000n 0 4001n 1.8 4300n 1.8 4301n 0 6000n 0 6001n 1.8 6300n 1.8 6301n 0 8000n 0 8001n 1.8 8300n 1.8 8301n 0"}
 C {devices/gnd.sym} 160 -450 0 0 {name=l38 lab=GND}
 C {devices/lab_wire.sym} 200 -520 0 1 {name=l40 sig_type=std_logic lab=start_conv}
 C {devices/gnd.sym} 360 -200 0 0 {name=l7 lab=GND}
@@ -331,7 +331,7 @@ C {devices/vsource.sym} 360 -240 0 0 {name=V_DATI value="pwl 0 0
 + 2600n 0 2601n 1.8 2700n 1.8 2701n 0
 + 3100n 0 3101n 1.8 3200n 1.8 3201n 0
 + 3500n 0 3501n 1.8 3700n 1.8 3701n 0"}
-C {devices/vsource.sym} 360 -370 0 0 {name=V_BRIDGE_LOAD value="0 pulse(0 1.8 3700n 1n 1n 100n 6300n)"}
+C {devices/vsource.sym} 360 -370 0 0 {name=V_BRIDGE_LOAD value="pwl 0 0 3700n 0 3701n 1.8 3800n 1.8 3801n 0 7700n 0 7701n 1.8 7800n 1.8 7801n 0 10000n 0 10001n 1.8 10100n 1.8 10101n 0"}
 C {devices/gnd.sym} 360 -330 0 0 {name=l8 lab=GND}
 C {devices/gnd.sym} 160 -200 0 0 {name=l10 lab=GND}
 C {devices/lab_wire.sym} 200 -280 0 1 {name=l11 sig_type=std_logic lab=bridge_clk}
