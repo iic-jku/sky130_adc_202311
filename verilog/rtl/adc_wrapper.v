@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2020 Efabless Corporation
+// SPDX-FileCopyrightText: 2020 Efabless Corporation, 2023-2025 Harald Pretl, IIC@JKU
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -12,6 +12,28 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 // SPDX-License-Identifier: Apache-2.0
+//
+// 2025-03-06: Improve comments
+//
+// Mapping of Caravel I/Os to ADC+bridge
+//
+// Inputs (digital):
+// -----------------
+//  IO_IN[11]:  Reset for ADC and bridge (active LOW)
+//  IO_IN[13]:  Clk for ADC charge pump (nominally 4kHz) and ADC bridge serial I/F
+//  IO_IN[7]:   ADC bridge serial input
+//  IO_IN[8]:   ADC bridge load (ADC config and result)
+//  IO_IN[12]:  ADC start conversion (rising edge)
+//
+// Inputs (analog):
+// ----------------
+//  ANALOG[3]:  Positive ADC analog input
+//  ANALOG[2]:  Negative ADC analog input
+//
+// Outputs (digital):
+// ------------------
+//  IO_OUT[5]:  ADC conversion finished (active HI)
+//  IO_OUT[6]:  ADC bridge serial output
 
 `default_nettype none
 `include "adc_top.v"
@@ -168,7 +190,7 @@ module adc_wrapper (
     // IRQ
     assign irq = 3'b000;	// Unused
 
-    // Instiate the two user modules
+    // Instantiate the two user modules (ADC plus ADC-bridge)
 
     wire [15:0] cfg1;
     wire [15:0] cfg2;
@@ -213,6 +235,6 @@ module adc_wrapper (
         .tie0(io_oeb[13:7])
     );
 
-endmodule
+endmodule // adc_wrapper
 
 `default_nettype wire
